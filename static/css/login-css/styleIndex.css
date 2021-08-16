@@ -1,0 +1,442 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+/* main style */
+html,
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	line-height: 2em;
+	background: #333;
+	/* body元素居中 */
+	min-width: 1200px;
+	max-width: 1600px;
+	margin: 0 auto;
+
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	padding-bottom: 15px;
+}
+
+#h1-one {
+	padding-left: 50px;
+}
+
+p {
+	margin: 10px 0;
+}
+
+.clr {
+	clear: both;
+}
+
+.text-primary {
+	color: #ff5053;
+}
+
+.bg-dark {
+	background: #222;
+	color: #fff;
+}
+
+.container {
+	margin: 0 auto; //水平居中
+	max-width: 1100px;
+	overflow: hidden;
+	padding: 0 20px;
+}
+
+/* navbar 导航栏*/
+#navbar {
+	background: #222;
+	color: #fff;
+}
+
+#navbar a {
+	color: #fff;
+}
+
+#navbar h1 {
+	padding-top: 20px;
+	float: left;
+}
+
+#navbar ul {
+	float: right;
+	list-style: none;
+}
+
+#navbar ul li {
+	float: left;
+}
+
+
+
+#navbar ul li a {
+	display: block;
+	padding: 20px;
+	text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+	background-color: #333;
+	color: #ff5053;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+/* showcase 展示图文*/
+#showcase {
+	z-index: 1;
+	height: 800px;
+	position: relative;
+	/* background: url(../bg/bg5.jpg) no-repeat center center/cover;	 */
+	/* animation: imgAnimation 20s infinite ease-in-out alternate; */
+	background: url(../bg/bg5.jpg) no-repeat center center/cover;
+	background: url(../bg/bg6.jpg) no-repeat center center/cover;
+	background: url(../bg/bg7.jpg) no-repeat center center/cover;
+	background: url(../bg/bg8.jpg) no-repeat center center/cover;
+
+	background: url(../bg/bg5.jpg) no-repeat center center/cover;
+	background-size: 120%;
+	animation: frams 10s ease-in-out infinite;
+}
+
+@keyframes frams {
+	0% {
+		background: url(../bg/bg5.jpg) no-repeat center center/cover;
+		background-size: 120%;
+	}
+	
+	15% {
+		background: url(../bg/bg5.jpg) no-repeat center center/cover;
+		background-size: 115%;
+	}
+	
+	25% {
+		background: url(../bg/bg8.jpg) no-repeat center center/cover;
+		background-size: 110%;
+	}
+	
+	35% {
+		background: url(../bg/bg8.jpg) no-repeat center center/cover;
+		background-size: 105%;
+	}
+	
+
+	50% {
+		background: url(../bg/bg7.jpg) no-repeat center center/cover;
+		background-size: 100%;
+	}
+	
+	65% {
+		background: url(../bg/bg7.jpg) no-repeat center center/cover;
+		background-size: 105%;
+	}
+
+	75% {
+		background: url(../bg/bg6.jpg) no-repeat center center/cover;
+		background-size:110%;
+
+	}
+	
+	90% {
+		background: url(../bg/bg6.jpg) no-repeat center center/cover;
+		background-size:115%;
+	
+	}
+		
+	100% {
+		background: url(../bg/bg5.jpg) no-repeat center center/cover;
+		background-size: 120%;
+	}
+}
+
+
+#showcase .showcase-content {
+	color: #fff;
+	padding-top: 130px;
+	padding-left: 50px;
+	
+	
+}
+
+#showcase .showcase-content h1 {
+	text-align: left;
+	font-size: 55px;
+	line-height: 2em;
+	text-shadow: 0 5px 30px rgba(0, 0, 0, 0.9); 
+}
+
+#showcase .showcase-content p {
+	font-size: 20px;
+	line-height: 2em;
+	padding-bottom: 20px;
+	width: 400px;
+	
+
+}
+
+.btn {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #333333;
+	padding: 10px 20px;
+	box-shadow: 0 5px 30px rgba(0,0,0,0.30); 
+	
+}
+
+.btn:hover {
+	background-color: #444444;
+	color: #ff5053;
+}
+
+.btn-light {
+	background: #ffffff;
+	color: #222222;
+	margin-top: 35px;
+}
+
+/* home-info 主页介绍 */
+#home-info {
+	height: 400px;
+	margin-top:3px ;
+	margin-bottom: 3px;
+
+}
+
+#home-info .info-img {
+	float: right;
+	width: 40%;
+	height: 100%;
+	opacity: 90%	;
+	background: url(../img/ajln.jpg) no-repeat center center/cover;
+	animation: imgAnimation 10s infinite ease alternate;
+}
+
+@keyframes imgAnimation  {
+	0% {
+		background-size: 160%;
+	}
+
+	100% {
+		background-size: 120%
+	}
+}
+
+#home-info .info-content {
+	float: left;
+	width: 60%;
+	text-align: center;
+	height: 100%;
+	padding: 60px 25px;
+	overflow: hidden;
+}
+
+/* feature 设计介绍 */
+.box {
+	float: left;
+	width: 33.3%;
+	height: 480px;
+	padding: 30px;
+	text-align: center;
+}
+
+.box i {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 1px #666;
+}
+
+.box p {
+
+	font-size: 16px;
+	font-weight: unset;
+}
+
+.bg-light {
+	background: #f5f5f5;
+	color: #222;
+}
+
+.bg-primary {
+	background: #e5e5d5;
+}
+
+/* footer 底栏 */
+#main-footer {
+	text-align: center;
+	background: #222;
+	color: #fff;
+	padding: 20px;
+}
+
+
+/* 下拉按钮样式 */
+.dropbtn {
+	cursor: pointer;
+	position: relative;	
+	max-width: 95px;
+	min-width: 95px;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: absolute;
+	display: inline-block;
+	z-index: 100;
+	
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+	font-size: 13px;
+	font-weight: 400;
+
+    background: #222;
+	color: #fff;
+    max-width: 95px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {
+	background-color: #444;
+	color: #ff5053;
+}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+	
+	background-color: #444;
+	color: #ff5053;
+}
+
+.Allcontainner#blur.active{
+    filter: blur(20px); /*滤镜：模糊20px*/
+    pointer-events: none; /*阻止元素的点击事件*/
+    user-select: none; /*用户是否可以选择文本*/
+}
+
+#popup{
+    position:fixed; /*绝对定位*/
+    /* top:10%;  */
+    left: 50%; 
+	transform: translate(-50%,-60%); /*2D转换*/
+	
+	width: 1024px; 
+	height: 768px;
+	padding: 50px; 
+	
+    box-shadow: 0 5px 30px rgba(0,0,0,0.30); /*元素阴影 X偏移 Y偏移 阴影模糊半径 阴影颜色*/
+    background-color: #fff; 
+    visibility: hidden; 
+    opacity: 0; 
+	transition: 0.5s; 
+	border-radius: 25px;
+
+}
+#popup.active{
+    top:60%; /*距上部*/
+    visibility: visible; /*显示元素*/
+    opacity: 1; /*不透明度*/
+    transition: 1s; /*过渡时间*/
+}
+
+
+
+#close{
+	width: 70%;
+	padding: 10px 150px;
+	background-color: #e95759;
+	border: none;
+	color: #fff;
+	
+	transition: transform 80ms ease-in;
+
+	margin: 20px 20px 124px 124px;
+
+	
+}
+
+#close:hover{
+	transform: scale(0.98);
+}
+
+#close:focus{
+	transform: scale(0.95);
+	outline: none;
+}
+
+.bgImg{ 
+	border-radius: 30px;
+	box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+	width:150px;
+	height:150px; 
+	background: url(../img/ajln.jpg)  no-repeat center;
+	background-size:300px;
+	float: left;
+	margin: 50px 20px;
+
+	transition: transform 0.5s ease-in;	
+}
+
+.bgImg:hover{
+	transform: rotate(-5deg) scale(1.1) ;
+}
+
+.title{
+	letter-spacing: 0.5px;
+	margin-top:40px ;
+}
+
+
+.title h1{
+	color: rgb(224, 97, 118);
+	margin-top: 50px;
+}
+
+.title h4{
+	color: rgb(82, 82, 82);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.info{
+	float: left;
+	margin: 15px 5px 40px 40px;
+}
+
+.info p{
+	
+}

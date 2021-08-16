@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Campaigns</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="../static/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/img/favicon-16x16.png">
+  <link rel="manifest" href="../static/img/site.webmanifest">
+  <link rel="mask-icon" href="../static/img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Ultimate Multipurpose HTML Dashboard Kit">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ui8">
+  <meta name="twitter:title" content="Unity">
+  <meta name="twitter:description" content="Ultimate Multipurpose HTML Dashboard Kit">
+  <meta name="twitter:creator" content="@ui8">
+  <meta name="twitter:image" content="https://ui8-unity.herokuapp.com/img/twitter-card.jpg">
+  <meta property="og:title" content="Unity">
+  <meta property="og:type" content="Article">
+  <meta property="og:url" content="https://ui8-unity.herokuapp.com/index.html">
+  <meta property="og:image" content="https://ui8-unity.herokuapp.com/img/fb-og-image.jpg">
+  <meta property="og:description" content="Ultimate Multipurpose HTML Dashboard Kit">
+  <meta property="og:site_name" content="Unity">
+  <meta property="fb:admins" content="132951670226590">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:ital,wght@0,500;1,500&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" media="all" href="../static/css/super.css">
+  <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }</script>
+
+
+</head>
+
+<body>
+  <script>console.log(localStorage.getItem('darkMode'));
+    if (localStorage.getItem('darkMode') === "on") {
+      document.body.classList.add("dark");
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector('.js-switch-theme input').checked = true;
+      });
+    }
+  </script>
+  <div class="page">
+
+    <!--左边侧栏-->
+    <div class="sidebar">
+
+      <div class="sidebar__top">
+
+        <button class="sidebar__close">
+          <svg class="icon icon-close">
+            <use xlink:href="../static/img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <a class="sidebar__logo" href="#">
+          <img class="sidebar__pic sidebar__pic_black" src="../static/img/logo.png" alt="" />
+          <img class="sidebar__pic sidebar__pic_white" src="../static/img/logo-white.png" alt="" />
+        </a>
+
+        <button class="sidebar__burger"></button>
+
+      </div>
+
+      <div class="sidebar__wrapper">
+        <div class="sidebar__inner">
+          <a class="sidebar__logo" href="#"><img class="sidebar__pic" src="../static/img/logo-sm.png" alt="" /></a>
+          <div class="sidebar__list">
+            <div class="sidebar__group">
+              <div class="sidebar__caption caption-sm"><span>Overview</span></div>
+              <div class="sidebar__menu">
+                <a class="sidebar__item " href="overview.html">
+
+                  <div class="sidebar__icon">
+                    <svg class="icon icon-overview">
+                      <use xlink:href="../static/img/sprite.svg#icon-overview"></use>
+                    </svg>
+                  </div>
+
+                  <div class="sidebar__text">首页</div>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="sidebar__group">
+
+              <div class="sidebar__caption caption-sm">
+                <span>设备状况监控</span>
+              </div>
+
+              <div class="sidebar__menu">
+
+                <a class="sidebar__item  " href="monitor.html">
+                  <div class="sidebar__icon"><svg class="icon icon-overview">
+                      <use xlink:href="../static/img/sprite.svg#icon-overview"></use>
+                    </svg></div>
+                  <div class="sidebar__text">根站点信息</div>
+                </a>
+
+                <a class="sidebar__item active" href="other.html">
+                  <div class="sidebar__icon"><svg class="icon icon-bag">
+                      <use xlink:href="../static/img/sprite.svg#icon-bag"></use>
+                    </svg></div>
+                  <div class="sidebar__text">站点健康评测体系</div>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="sidebar__group">
+              <div class="sidebar__caption caption-sm">工具</div>
+              <div class="sidebar__menu">
+
+                <a class="sidebar__item" href="userlist.html">
+                  <div class="sidebar__icon"><svg class="icon icon-message">
+                      <use xlink:href="../static/img/sprite.svg#icon-message"></use>
+                    </svg></div>
+                  <div class="sidebar__text">查询用户列表</div>
+                </a>
+
+                <a class="sidebar__item" href="errorDetect.html">
+                  <div class="sidebar__icon"><svg class="icon icon-notification">
+                      <use xlink:href="../static/img/sprite.svg#icon-notification"></use>
+                    </svg></div>
+                  <div class="sidebar__text">消息中心</div>
+                  <div class="sidebar__counter">3</div>
+                </a>
+
+                <a class="sidebar__item" href="satisfaction.html">
+                  <div class="sidebar__icon"><svg class="icon icon-chat">
+                      <use xlink:href="../static/img/sprite.svg#icon-chat"></use>
+                    </svg></div>
+                  <div class="sidebar__text">扩展功能</div>
+                </a>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="sidebar__profile">
+            <div class="sidebar__details">
+
+              <a class="sidebar__link" href="#">
+                <div class="sidebar__icon"><svg class="icon icon-profile">
+                    <use xlink:href="../static/img/sprite.svg#icon-profile"></use>
+                  </svg>
+                </div>
+                <div class="sidebar__text">Profile</div>
+              </a>
+
+
+              <a class="sidebar__link" href="Sign_IN&UP.html">
+                <div class="sidebar__icon"><svg class="icon icon-logout">
+                    <use xlink:href="../static/img/sprite.svg#icon-logout"></use>
+                  </svg></div>
+                <div class="sidebar__text">Log out</div>
+              </a>
+
+            </div>
+
+            <a class="sidebar__user" href="#">
+
+              <div class="sidebar__ava"><img class="sidebar__pic" src="../static/img/ava.png" alt="" /></div>
+              <div class="sidebar__desc">
+                <div class="sidebar__man">管理员</div>
+                <div class="sidebar__status caption">administer</div>
+              </div>
+              <div class="sidebar__arrow"><svg class="icon icon-arrows">
+                  <use xlink:href="../static/img/sprite.svg#icon-arrows"></use>
+                </svg></div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="sidebar__bottom"><label class="switch switch_theme js-switch-theme"><input class="switch__input"
+            type="checkbox" /><span class="switch__in"><span class="switch__box"></span><span class="switch__icon"><svg
+                class="icon icon-moon">
+                <use xlink:href="../static/img/sprite.svg#icon-moon"></use>
+              </svg><svg class="icon icon-sun">
+                <use xlink:href="../static/img/sprite.svg#icon-sun"></use>
+              </svg></span></span></label></div>
+    </div>
+
+
+    <div class="page__wrapper">
+      <div class="page__center">
+        <!-- 顶栏 -->
+        <div class="page__row page__row_head page__row_border">
+
+          <div class="page__col">
+            <div class="page__hello h5">设备状态监控</div>
+            <div class="page__welcome h2">所有节点<span class="desktop-hide"></span></div>
+          </div>
+
+          <div class="page__col">
+
+            <!--搜索栏-->
+            <div class="header"><button class="header__burger"></button>
+
+              <div class="search">
+
+                <div class="search__field"><input class="search__input" type="text" placeholder="使用帮助" /><button
+                    class="search__toggle"><svg class="icon icon-search">
+                      <use xlink:href="../static/img/sprite.svg#icon-search"></use>
+                    </svg><svg class="icon icon-close">
+                      <use xlink:href="../static/img/sprite.svg#icon-close"></use>
+                    </svg></button>
+                </div>
+
+                <div class="search__result">
+                  <div class="search__info caption-sm"></div>
+                  <div class="search__list"><a class="search__item" href="#">
+                      <div class="search__preview bg-pink"><img class="search__pic" src="../static/img/figure-1.png" alt="" />
+                      </div>
+                      <div class="search__text">说明文档<svg class="icon icon-arrow-right">
+                          <use xlink:href="../static/img/sprite.svg#icon-arrow-right"></use>
+                        </svg></div>
+                    </a><a class="search__item" href="#">
+                      <div class="search__preview bg-yellow"><img class="search__pic" src="../static/img/figure-4.png" alt="" />
+                      </div>
+                      <div class="search__text">使用帮助<svg class="icon icon-arrow-right">
+                          <use xlink:href="../static/img/sprite.svg#icon-arrow-right"></use>
+                        </svg></div>
+                    </a><a class="search__item" href="#">
+                      <div class="search__preview bg-blue-light"><img class="search__pic" src="../static/img/figure-3.png"
+                          alt="" /></div>
+                      <div class="search__text">其他<svg class="icon icon-arrow-right">
+                          <use xlink:href="../static/img/sprite.svg#icon-arrow-right"></use>
+                        </svg></div>
+                    </a></div><button class="search__btn btn btn_purple btn_wide">Advance Search</button>
+                </div>
+
+              </div><button class="header__search"><svg class="icon icon-search">
+                  <use xlink:href="../static/img/sprite.svg#icon-search"></use>
+                </svg></button>
+
+
+              <div class="notifications"><button class="notifications__open"><svg class="icon icon-bell">
+                    <use xlink:href="../static/img/sprite.svg#icon-bell"></use>
+                  </svg><span class="notifications__counter">3</span></button>
+                <div class="notifications__wrap">
+                  <div class="notifications__info h6">运行消息</div>
+
+                  <div class="notifications__list">
+
+
+                    <a class="notifications__item" href="notifications.html">
+                      <div class="notifications__ava"><img class="notifications__pic" src="../static/img/ava-1.png" alt="" />
+                        <div class="notifications__status bg-blue"><img class="notifications__pic" src="../static/img/chat.svg"
+                            alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user caption">设备检测助手</div>
+                          <div class="notifications__time caption">8h</div>
+                        </div>
+                        <div class="notifications__text caption-sm">你的设备可能炸了<span
+                            class="notifications__project">系统消息</span></div>
+                      </div>
+
+
+                    </a><a class="notifications__item" href="notifications.html">
+                      <div class="notifications__ava"><img class="notifications__pic" src="../static/img/ava-1.png" alt="" />
+                        <div class="notifications__status bg-green"><img class="notifications__pic" src="../static/img/bag.svg"
+                            alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user caption">运行报告</div>
+                          <div class="notifications__time caption">12h</div>
+                        </div>
+                        <div class="notifications__text caption-sm">24内设备的运行报告出炉了！ <span
+                            class="notifications__project">系统信息</span></div>
+                      </div>
+
+
+                    </a><a class="notifications__item" href="notifications.html">
+                      <div class="notifications__ava"><img class="notifications__pic" src="../static/img/ava-1.png" alt="" />
+                        <div class="notifications__status bg-purple"><img class="notifications__pic"
+                            src="../static/img/message.svg" alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user caption">用户消息</div>
+                          <div class="notifications__time caption">14h</div>
+                        </div>
+                        <div class="notifications__text caption-sm">用户发来一条消息📪 </div>
+                      </div>
+
+                    </a>
+                  </div>
+                  <div class="notifications__btns"><a class="notifications__btn btn btn_black"
+                      href="/errorDetect.html">查看所有历史记录</a></div>
+                </div>
+              </div><a class="header__user" href="#"><img class="header__pic" src="../static/img/ava.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+
+        <!--主体-->
+        <div class="page__row page__row_border">
+          <!--主体 -中心-->
+          <div class="page__col">
+
+            <div class="details">
+              <div class="details__container " style="height: 750px;">
+                <div class="details__title h5">健康度综合指标雷达图</div>
+
+                <div class="details__box" style="background-color: #fff;">
+                  <div class="details__chart details__chart_counter ">
+                    <div id="radar" style="width: 100%; height: 300%;margin: auto; overflow: hidden;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="details">
+              <div class="details__container">
+                <div class="details__title h5">质量评估体系各指标健康度趋势</div>
+
+                <div class="details__box" style="background-color: #fff;">
+
+                  <div class="details__title h5">深圳</div>
+                  <div class="details__chart details__chart_counter" style="height:300px;">
+                    <canvas id="htmlLegendsChart1"></canvas>
+                  </div>
+
+                  <div class="details__title h5">南京</div>
+                  <div class="details__chart details__chart_counter" style="height:300px;">
+                    <canvas id="htmlLegendsChart2"></canvas>
+                  </div>
+
+                  <div class="details__title h5">杭州</div>
+                  <div class="details__chart details__chart_counter" style="height:300px;">
+                    <canvas id="htmlLegendsChart3"></canvas>
+                  </div>
+
+                  <div class="details__title h5">上海</div>
+                  <div class="details__chart details__chart_counter" style="height:300px;">
+                    
+                    <canvas id="htmlLegendsChart4"></canvas>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="page__col">
+            <div class="page__group" style="width: 400px;">
+              <!--主体侧栏-上半-->
+              <div class="widget widget_stat widget_pb60">
+
+                <div class="widget__title">站点设备数量分布</div>
+
+
+                <div id="3fb8da6a038549c0872ba35f4c789da9" class="chart-container"
+                  style="width:100%; height:300px;overflow:hidden;">
+                </div>
+
+                <div class="widget__text"></div>
+                <!--<a class="widget__btn btn btn_white btn_wide" href="payouts.html">查看详情</a>-->
+
+              </div>
+
+              <!--主体侧栏-下半-->
+              <div class="widget widget_stat widget_pb60">
+                <div class="widget__title ">站点健康度排名</div>
+
+                <div id="9ad4f64b0b0c45638b323bef661ad98e" class="chart-container widget__flex"
+                  style="width:95%; height:370px; margin-top: 50px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- scripts-->
+  <script src="../static/js/lib/jquery.min.js"></script>
+  <script src="../static/js/lib/owl.carousel.min.js"></script>
+  <script src="../static/js/lib/svg4everybody.min.js"></script>
+  <script src="../static/js/lib/apexcharts.min.js"></script>
+  <script src="../static/js/lib/jquery.magnific-popup.min.js"></script>
+  <script src="../static/js/super.js"></script>
+  <script src="../static/js/charts.js"></script>
+
+  <!--py echarts-->
+  <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+  <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+  <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/guangdong.js"></script>
+  <script src="../static/js/mycharts/pyecharts-heatmap-china.js"></script>
+  <script src="../static/js/mycharts/pyechart-rank.js"></script>
+
+
+  <!--legend chart-->
+  <script src="../static/js/lib/chart.min.js"></script>
+
+</body>
+<script>//健康度综合指标雷达图
+$(document).ready(function() {
+	$.ajax({
+		url: "/rada",
+		data: {
+		},
+		type: "POST",
+		dataType:"json",
+		success:function(data){
+			var dom = document.getElementById("radar");
+			var myChart = echarts.init(dom);
+			var app = {};
+
+			var option;
+
+
+// Schema:
+
+			var dataNJ = data.inf1;
+
+			var dataShenZ = data.inf2;
+
+			var dataSH = data.inf3;
+
+			var dataSuZ = data.inf4;
+
+			var lineStyle = {
+				normal: {
+					width: 1,
+					opacity: 0.7
+				}
+			};
+
+			option = {
+				backgroundColor: '#fff',
+				title: {
+					text: 'AQI - 雷达图',
+					left: 'center',
+					textStyle: {
+						color: '#333'
+					}
+				},
+				legend: {
+					bottom: 5,
+					data: ['南京', '深圳', '上海', '苏州'],
+					itemGap: 20,
+					textStyle: {
+						color: '#333',
+						fontSize: 14
+					},
+					selectedMode: 'single'
+				},
+				// visualMap: {
+				// 	show: true,
+				// 	min: 0,
+				// 	max: 20,
+				// 	dimension: 6,
+				// 	inRange: {
+				// 		colorLightness: [0.5, 0.8]
+				// 	}
+				// },
+				radar: {
+					indicator: [
+						{ name: '信号与干扰(coverage)', max: 100 },
+						{ name: '接入成功率（successCon）', max: 100 },
+						{ name: '接入耗时（timeCon）', max: 1000 },
+						{ name: '吞吐达标率（throughput）', max: 100 },
+						{ name: '容量健康度（capacity）', max: 100 },
+					],
+					shape: 'circle',
+					splitNumber: 5,
+					name: {
+						textStyle: {
+							color: '666'
+						}
+					},
+					splitLine: {
+						lineStyle: {
+							color: [
+								'rgba(238, 197, 102, 0.9)', 'rgba(238, 197, 102, 1)',
+								'rgba(238, 197, 102, 0.3)', 'rgba(238, 197, 102, 1)',
+								'rgba(238, 197, 102, 0.8)', 'rgba(238, 197, 102, 1)'
+							].reverse()
+						}
+					},
+					splitArea: {
+						show: false
+					},
+					axisLine: {
+						lineStyle: {
+							color: 'rgba(228, 197, 102, 0.7)'
+						}
+					}
+				},
+				series: [
+					{
+						name: '南京',
+						type: 'radar',
+						lineStyle: lineStyle,
+						data: dataNJ,
+						symbol: 'none',
+						itemStyle: {
+							color: '#F9713C'
+						},
+						areaStyle: {
+							opacity: 0.1
+						}
+					},
+					{
+						name: '上海',
+						type: 'radar',
+						lineStyle: lineStyle,
+						data: dataSH,
+						symbol: 'none',
+						itemStyle: {
+							color: '#B3E4A1'
+						},
+						areaStyle: {
+							opacity: 0.1
+						}
+					},
+					{
+						name: '深圳',
+						type: 'radar',
+						lineStyle: lineStyle,
+						data: dataShenZ,
+						symbol: 'none',
+						itemStyle: {
+							color: 'rgb(238, 197, 102)'
+						},
+						areaStyle: {
+							opacity: 0.1
+						}
+					},
+					{
+						name: '苏州',
+						type: 'radar',
+						lineStyle: lineStyle,
+						data: dataSuZ,
+						symbol: 'none',
+						itemStyle: {
+							color: 'rgb(238, 52, 12)'
+						},
+						areaStyle: {
+							opacity: 0.1
+						}
+					}
+				]
+			};
+
+			if (option && typeof option === 'object') {
+				myChart.setOption(option);
+			}
+
+		}
+
+	});
+});
+</script>
+<script>
+  $(document).ready(function() {
+    $.ajax({
+        url: "/trend",
+        data: {
+        },
+        type: "POST",
+        dataType:"json",
+        success:function(data){
+            htmlLegendsChart = document.getElementById('htmlLegendsChart1').getContext('2d');
+// Chart with HTML Legends
+
+            var gradientStroke = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke.addColorStop(0, '#177dff');
+            gradientStroke.addColorStop(1, '#80b6f4');
+
+            var gradientFill = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill.addColorStop(0, "rgba(23, 125, 255, 0.7)");
+            gradientFill.addColorStop(1, "rgba(128, 182, 244, 0.3)");
+
+            var gradientStroke2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke2.addColorStop(0, '#f3545d');
+            gradientStroke2.addColorStop(1, '#ff8990');
+
+            var gradientFill2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill2.addColorStop(0, "rgba(243, 84, 93, 0.7)");
+            gradientFill2.addColorStop(1, "rgba(255, 137, 144, 0.3)");
+
+            var gradientStroke3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke3.addColorStop(0, '#fdaf4b');
+            gradientStroke3.addColorStop(1, '#ffc478');
+
+            var gradientFill3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill3.addColorStop(0, "rgba(253, 175, 75, 0.7)");
+            gradientFill3.addColorStop(1, "rgba(255, 196, 120, 0.3)");
+
+            var myHtmlLegendsChart = new Chart(htmlLegendsChart, {
+                type: 'line',
+                data: {
+                    labels: ['2021-06/22/21-18:00:00',
+                        '2021-06/22/21-19:00:00',
+                        '2021-06/22/21-20:00:00',
+                        '2021-06/22/21-21:00:00',
+                        '2021-06/22/21-22:00:00',
+                        '2021-06/22/21-23:00:00',
+                        '2021-06/23/21-00:00:00',
+                        '2021-06/23/21-01:00:00',
+                        '2021-06/23/21-02:00:00',
+                        '2021-06/23/21-03:00:00',
+                        '2021-06/23/21-04:00:00',
+                        '2021-06/23/21-05:00:00',
+                        '2021-06/23/21-06:00:00',
+                        '2021-06/23/21-07:00:00',
+                        '2021-06/23/21-08:00:00',
+                        '2021-06/23/21-09:00:00',
+                        '2021-06/23/21-10:00:00',
+                        '2021-06/23/21-11:00:00',
+                        '2021-06/23/21-12:00:00',
+                        '2021-06/23/21-13:00:00',
+                        '2021-06/23/21-14:00:00',
+                        '2021-06/23/21-15:00:00',
+                        '2021-06/23/21-16:00:00',
+                        '2021-06/23/21-17:00:00',
+                        '2021-06/23/21-18:00:00'],
+                    datasets: [{
+                        label: "coverage",
+                        borderColor: gradientStroke2,
+                        pointBackgroundColor: gradientStroke2,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill2,
+                        legendColor: '#f3545d',
+                        fill: true,
+                        borderWidth: 1,
+                        data:data.cover[0]
+                    }, {
+                        label: "rate",
+                        borderColor: gradientStroke3,
+                        pointBackgroundColor: gradientStroke3,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill3,
+                        legendColor: '#fdaf4b',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.ratess[0]
+                    }, {
+                        label: "successCon",
+                        borderColor: gradientStroke,
+                        pointBackgroundColor: gradientStroke,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill,
+                        legendColor: '#177dff',
+                        fill: true,
+                        borderWidth: 1,
+                        data:data.successcon[0]
+                    }, {
+                        label: "throughput",
+                        borderColor: "#ffeeff",
+                        pointBackgroundColor: "#ffeeff",
+                        pointRadius: 0,
+                        backgroundColor: "#ffeeff",
+                        legendColor: '#ffeeff',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.through[0]
+                    }, {
+                        label: "capacity",
+                        borderColor: "#ae57",
+                        pointBackgroundColor: "#ae57",
+                        pointRadius: 0,
+                        backgroundColor: "#ae57",
+                        legendColor: '#ae57',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.capa[0]
+                    }, {
+                        borderColor: "#fff",
+                        pointBackgroundColor: "#fff",
+                        pointRadius: 0,
+                        backgroundColor: "#fff",
+                        legendColor: '#fff',
+                        fill: true,
+                        borderWidth: 1,
+                        data: [150]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        bodySpacing: 4,
+                        mode: "nearest",
+                        intersect: 0,
+                        position: "nearest",
+                        xPadding: 10,
+                        yPadding: 10,
+                        caretPadding: 10
+                    },
+                    layout: {
+                        padding: { left: 15, right: 15, top: 15, bottom: 15 }
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                fontColor: "rgba(0,0,0,0.5)",
+                                fontStyle: "500",
+                                beginAtZero: false,
+
+                                padding: 20
+                            },
+                            gridLines: {
+                                drawTicks: false,
+                                display: false
+                            }
+                        }],
+                        xAxes: [{
+                            gridLines: {
+                                zeroLineColor: "transparent"
+                            },
+                            ticks: {
+                                padding: 20,
+                                fontColor: "rgba(0,0,0,0.5)",
+                                fontStyle: "500"
+                            }
+                        }]
+                    },
+                    legendCallback: function (chart) {
+                        var text = [];
+                        text.push('<ul class="' + chart.id + '-legend html-legend">');
+                        for (var i = 0; i < chart.data.datasets.length; i++) {
+                            text.push('<li><span style="background-color:' + chart.data.datasets[i].legendColor + '"></span>');
+                            if (chart.data.datasets[i].label) {
+                                text.push(chart.data.datasets[i].label);
+                            }
+                            text.push('</li>');
+                        }
+                        text.push('</ul>');
+                        return text.join('');
+                    }
+                }
+            });
+
+            var myLegendContainer = document.getElementById("myChartLegend");
+
+// generate HTML legend
+            myLegendContainer.innerHTML = myHtmlLegendsChart.generateLegend();
+
+// bind onClick event to all LI-tags of the legend
+            var legendItems = myLegendContainer.getElementsByTagName('li');
+            for (var i = 0; i < legendItems.length; i += 1) {
+                legendItems[i].addEventListener("click", legendClickCallback, false);
+            }
+
+        }
+
+    });
+});
+
+</script>
+<script>$(document).ready(function() {
+    $.ajax({
+        url: "/trend",
+        data: {
+        },
+        type: "POST",
+        dataType:"json",
+        success:function(data){
+            htmlLegendsChart = document.getElementById('htmlLegendsChart2').getContext('2d');
+// Chart with HTML Legends
+
+            var gradientStroke = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke.addColorStop(0, '#177dff');
+            gradientStroke.addColorStop(1, '#80b6f4');
+
+            var gradientFill = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill.addColorStop(0, "rgba(23, 125, 255, 0.7)");
+            gradientFill.addColorStop(1, "rgba(128, 182, 244, 0.3)");
+
+            var gradientStroke2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke2.addColorStop(0, '#f3545d');
+            gradientStroke2.addColorStop(1, '#ff8990');
+
+            var gradientFill2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill2.addColorStop(0, "rgba(243, 84, 93, 0.7)");
+            gradientFill2.addColorStop(1, "rgba(255, 137, 144, 0.3)");
+
+            var gradientStroke3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke3.addColorStop(0, '#fdaf4b');
+            gradientStroke3.addColorStop(1, '#ffc478');
+
+            var gradientFill3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill3.addColorStop(0, "rgba(253, 175, 75, 0.7)");
+            gradientFill3.addColorStop(1, "rgba(255, 196, 120, 0.3)");
+
+            var myHtmlLegendsChart = new Chart(htmlLegendsChart, {
+                type: 'line',
+                data: {
+                    labels: ['2021-06/22/21-18:00:00',
+                        '2021-06/22/21-19:00:00',
+                        '2021-06/22/21-20:00:00',
+                        '2021-06/22/21-21:00:00',
+                        '2021-06/22/21-22:00:00',
+                        '2021-06/22/21-23:00:00',
+                        '2021-06/23/21-00:00:00',
+                        '2021-06/23/21-01:00:00',
+                        '2021-06/23/21-02:00:00',
+                        '2021-06/23/21-03:00:00',
+                        '2021-06/23/21-04:00:00',
+                        '2021-06/23/21-05:00:00',
+                        '2021-06/23/21-06:00:00',
+                        '2021-06/23/21-07:00:00',
+                        '2021-06/23/21-08:00:00',
+                        '2021-06/23/21-09:00:00',
+                        '2021-06/23/21-10:00:00',
+                        '2021-06/23/21-11:00:00',
+                        '2021-06/23/21-12:00:00',
+                        '2021-06/23/21-13:00:00',
+                        '2021-06/23/21-14:00:00',
+                        '2021-06/23/21-15:00:00',
+                        '2021-06/23/21-16:00:00',
+                        '2021-06/23/21-17:00:00',
+                        '2021-06/23/21-18:00:00'],
+                    datasets: [{
+                        label: "coverage",
+                        borderColor: gradientStroke2,
+                        pointBackgroundColor: gradientStroke2,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill2,
+                        legendColor: '#f3545d',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.cover[1]
+                    }, {
+                        label: "rate",
+                        borderColor: gradientStroke3,
+                        pointBackgroundColor: gradientStroke3,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill3,
+                        legendColor: '#fdaf4b',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.ratess[1]
+                    }, {
+                        label: "successCon",
+                        borderColor: gradientStroke,
+                        pointBackgroundColor: gradientStroke,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill,
+                        legendColor: '#177dff',
+                        fill: true,
+                        borderWidth: 1,
+                        data:data.successcon[1]
+                    }, {
+                        label: "throughput",
+                        borderColor: "#ffeeff",
+                        pointBackgroundColor: "#ffeeff",
+                        pointRadius: 0,
+                        backgroundColor: "#ffeeff",
+                        legendColor: '#ffeeff',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.through[1]
+                    }, {
+                        label: "capacity",
+                        borderColor: "#ae57",
+                        pointBackgroundColor: "#ae57",
+                        pointRadius: 0,
+                        backgroundColor: "#ae57",
+                        legendColor: '#ae57',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.capa[1]
+                    }, {
+                        borderColor: "#fff",
+                        pointBackgroundColor: "#fff",
+                        pointRadius: 0,
+                        backgroundColor: "#fff",
+                        legendColor: '#fff',
+                        fill: true,
+                        borderWidth: 1,
+                        data: [150]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        bodySpacing: 4,
+                        mode: "nearest",
+                        intersect: 0,
+                        position: "nearest",
+                        xPadding: 10,
+                        yPadding: 10,
+                        caretPadding: 10
+                    },
+                    layout: {
+                        padding: { left: 15, right: 15, top: 15, bottom: 15 }
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                fontColor: "rgba(0,0,0,0.5)",
+                                fontStyle: "500",
+                                beginAtZero: false,
+
+                                padding: 20
+                            },
+                            gridLines: {
+                                drawTicks: false,
+                                display: false
+                            }
+                        }],
+                        xAxes: [{
+                            gridLines: {
+                                zeroLineColor: "transparent"
+                            },
+                            ticks: {
+                                padding: 20,
+                                fontColor: "rgba(0,0,0,0.5)",
+                                fontStyle: "500"
+                            }
+                        }]
+                    },
+                    legendCallback: function (chart) {
+                        var text = [];
+                        text.push('<ul class="' + chart.id + '-legend html-legend">');
+                        for (var i = 0; i < chart.data.datasets.length; i++) {
+                            text.push('<li><span style="background-color:' + chart.data.datasets[i].legendColor + '"></span>');
+                            if (chart.data.datasets[i].label) {
+                                text.push(chart.data.datasets[i].label);
+                            }
+                            text.push('</li>');
+                        }
+                        text.push('</ul>');
+                        return text.join('');
+                    }
+                }
+            });
+
+            var myLegendContainer = document.getElementById("myChartLegend");
+
+// generate HTML legend
+            myLegendContainer.innerHTML = myHtmlLegendsChart.generateLegend();
+
+// bind onClick event to all LI-tags of the legend
+            var legendItems = myLegendContainer.getElementsByTagName('li');
+            for (var i = 0; i < legendItems.length; i += 1) {
+                legendItems[i].addEventListener("click", legendClickCallback, false);
+            }
+
+        }
+
+    });
+});
+</script>
+<script>$(document).ready(function() {
+    $.ajax({
+        url: "/trend",
+        data: {
+        },
+        type: "POST",
+        dataType:"json",
+        success:function(data){
+            htmlLegendsChart = document.getElementById('htmlLegendsChart3').getContext('2d');
+// Chart with HTML Legends
+
+            var gradientStroke = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke.addColorStop(0, '#177dff');
+            gradientStroke.addColorStop(1, '#80b6f4');
+
+            var gradientFill = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill.addColorStop(0, "rgba(23, 125, 255, 0.7)");
+            gradientFill.addColorStop(1, "rgba(128, 182, 244, 0.3)");
+
+            var gradientStroke2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke2.addColorStop(0, '#f3545d');
+            gradientStroke2.addColorStop(1, '#ff8990');
+
+            var gradientFill2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill2.addColorStop(0, "rgba(243, 84, 93, 0.7)");
+            gradientFill2.addColorStop(1, "rgba(255, 137, 144, 0.3)");
+
+            var gradientStroke3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke3.addColorStop(0, '#fdaf4b');
+            gradientStroke3.addColorStop(1, '#ffc478');
+
+            var gradientFill3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill3.addColorStop(0, "rgba(253, 175, 75, 0.7)");
+            gradientFill3.addColorStop(1, "rgba(255, 196, 120, 0.3)");
+
+            var myHtmlLegendsChart = new Chart(htmlLegendsChart, {
+                type: 'line',
+                data: {
+                    labels: ['2021-06/22/21-18:00:00',
+                        '2021-06/22/21-19:00:00',
+                        '2021-06/22/21-20:00:00',
+                        '2021-06/22/21-21:00:00',
+                        '2021-06/22/21-22:00:00',
+                        '2021-06/22/21-23:00:00',
+                        '2021-06/23/21-00:00:00',
+                        '2021-06/23/21-01:00:00',
+                        '2021-06/23/21-02:00:00',
+                        '2021-06/23/21-03:00:00',
+                        '2021-06/23/21-04:00:00',
+                        '2021-06/23/21-05:00:00',
+                        '2021-06/23/21-06:00:00',
+                        '2021-06/23/21-07:00:00',
+                        '2021-06/23/21-08:00:00',
+                        '2021-06/23/21-09:00:00',
+                        '2021-06/23/21-10:00:00',
+                        '2021-06/23/21-11:00:00',
+                        '2021-06/23/21-12:00:00',
+                        '2021-06/23/21-13:00:00',
+                        '2021-06/23/21-14:00:00',
+                        '2021-06/23/21-15:00:00',
+                        '2021-06/23/21-16:00:00',
+                        '2021-06/23/21-17:00:00',
+                        '2021-06/23/21-18:00:00'],
+                    datasets: [{
+                        label: "coverage",
+                        borderColor: gradientStroke2,
+                        pointBackgroundColor: gradientStroke2,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill2,
+                        legendColor: '#f3545d',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.cover[2]
+                    }, {
+                        label: "rate",
+                        borderColor: gradientStroke3,
+                        pointBackgroundColor: gradientStroke3,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill3,
+                        legendColor: '#fdaf4b',
+                        fill: true,
+                        borderWidth: 1,
+                        data:data.ratess[2]
+                    }, {
+                        label: "successCon",
+                        borderColor: gradientStroke,
+                        pointBackgroundColor: gradientStroke,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill,
+                        legendColor: '#177dff',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.successcon[3]
+                    }, {
+                        label: "throughput",
+                        borderColor: "#ffeeff",
+                        pointBackgroundColor: "#ffeeff",
+                        pointRadius: 0,
+                        backgroundColor: "#ffeeff",
+                        legendColor: '#ffeeff',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.through[2]
+                    }, {
+                        label: "capacity",
+                        borderColor: "#ae57",
+                        pointBackgroundColor: "#ae57",
+                        pointRadius: 0,
+                        backgroundColor: "#ae57",
+                        legendColor: '#ae57',
+                        fill: true,
+                        borderWidth: 1,
+                        data:data.capa[2]
+                    }, {
+                        borderColor: "#fff",
+                        pointBackgroundColor: "#fff",
+                        pointRadius: 0,
+                        backgroundColor: "#fff",
+                        legendColor: '#fff',
+                        fill: true,
+                        borderWidth: 1,
+                        data: [150]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        bodySpacing: 4,
+                        mode: "nearest",
+                        intersect: 0,
+                        position: "nearest",
+                        xPadding: 10,
+                        yPadding: 10,
+                        caretPadding: 10
+                    },
+                    layout: {
+                        padding: { left: 15, right: 15, top: 15, bottom: 15 }
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                fontColor: "rgba(0,0,0,0.5)",
+                                fontStyle: "500",
+                                beginAtZero: false,
+
+                                padding: 20
+                            },
+                            gridLines: {
+                                drawTicks: false,
+                                display: false
+                            }
+                        }],
+                        xAxes: [{
+                            gridLines: {
+                                zeroLineColor: "transparent"
+                            },
+                            ticks: {
+                                padding: 20,
+                                fontColor: "rgba(0,0,0,0.5)",
+                                fontStyle: "500"
+                            }
+                        }]
+                    },
+                    legendCallback: function (chart) {
+                        var text = [];
+                        text.push('<ul class="' + chart.id + '-legend html-legend">');
+                        for (var i = 0; i < chart.data.datasets.length; i++) {
+                            text.push('<li><span style="background-color:' + chart.data.datasets[i].legendColor + '"></span>');
+                            if (chart.data.datasets[i].label) {
+                                text.push(chart.data.datasets[i].label);
+                            }
+                            text.push('</li>');
+                        }
+                        text.push('</ul>');
+                        return text.join('');
+                    }
+                }
+            });
+
+            var myLegendContainer = document.getElementById("myChartLegend");
+
+// generate HTML legend
+            myLegendContainer.innerHTML = myHtmlLegendsChart.generateLegend();
+
+// bind onClick event to all LI-tags of the legend
+            var legendItems = myLegendContainer.getElementsByTagName('li');
+            for (var i = 0; i < legendItems.length; i += 1) {
+                legendItems[i].addEventListener("click", legendClickCallback, false);
+            }
+
+
+        }
+
+    });
+});
+</script>
+<script>$(document).ready(function() {
+    $.ajax({
+        url: "/trend",
+        data: {
+        },
+        type: "POST",
+        dataType:"json",
+        success:function(data){
+            htmlLegendsChart = document.getElementById('htmlLegendsChart4').getContext('2d');
+// Chart with HTML Legends
+
+            var gradientStroke = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke.addColorStop(0, '#177dff');
+            gradientStroke.addColorStop(1, '#80b6f4');
+
+            var gradientFill = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill.addColorStop(0, "rgba(23, 125, 255, 0.7)");
+            gradientFill.addColorStop(1, "rgba(128, 182, 244, 0.3)");
+
+            var gradientStroke2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke2.addColorStop(0, '#f3545d');
+            gradientStroke2.addColorStop(1, '#ff8990');
+
+            var gradientFill2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill2.addColorStop(0, "rgba(243, 84, 93, 0.7)");
+            gradientFill2.addColorStop(1, "rgba(255, 137, 144, 0.3)");
+
+            var gradientStroke3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientStroke3.addColorStop(0, '#fdaf4b');
+            gradientStroke3.addColorStop(1, '#ffc478');
+
+            var gradientFill3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+            gradientFill3.addColorStop(0, "rgba(253, 175, 75, 0.7)");
+            gradientFill3.addColorStop(1, "rgba(255, 196, 120, 0.3)");
+
+            var myHtmlLegendsChart = new Chart(htmlLegendsChart, {
+                type: 'line',
+                data: {
+                    labels: ['2021-06/22/21-18:00:00',
+                        '2021-06/22/21-19:00:00',
+                        '2021-06/22/21-20:00:00',
+                        '2021-06/22/21-21:00:00',
+                        '2021-06/22/21-22:00:00',
+                        '2021-06/22/21-23:00:00',
+                        '2021-06/23/21-00:00:00',
+                        '2021-06/23/21-01:00:00',
+                        '2021-06/23/21-02:00:00',
+                        '2021-06/23/21-03:00:00',
+                        '2021-06/23/21-04:00:00',
+                        '2021-06/23/21-05:00:00',
+                        '2021-06/23/21-06:00:00',
+                        '2021-06/23/21-07:00:00',
+                        '2021-06/23/21-08:00:00',
+                        '2021-06/23/21-09:00:00',
+                        '2021-06/23/21-10:00:00',
+                        '2021-06/23/21-11:00:00',
+                        '2021-06/23/21-12:00:00',
+                        '2021-06/23/21-13:00:00',
+                        '2021-06/23/21-14:00:00',
+                        '2021-06/23/21-15:00:00',
+                        '2021-06/23/21-16:00:00',
+                        '2021-06/23/21-17:00:00',
+                        '2021-06/23/21-18:00:00'],
+                    datasets: [{
+                        label: "coverage",
+                        borderColor: gradientStroke2,
+                        pointBackgroundColor: gradientStroke2,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill2,
+                        legendColor: '#f3545d',
+                        fill: true,
+                        borderWidth: 1,
+                        data:data.cover[3]
+                    }, {
+                        label: "rate",
+                        borderColor: gradientStroke3,
+                        pointBackgroundColor: gradientStroke3,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill3,
+                        legendColor: '#fdaf4b',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.ratess[3]
+                    }, {
+                        label: "successCon",
+                        borderColor: gradientStroke,
+                        pointBackgroundColor: gradientStroke,
+                        pointRadius: 0,
+                        backgroundColor: gradientFill,
+                        legendColor: '#177dff',
+                        fill: true,
+                        borderWidth: 1,
+                        data:data.successcon[3]
+                    }, {
+                        label: "throughput",
+                        borderColor: "#ffeeff",
+                        pointBackgroundColor: "#ffeeff",
+                        pointRadius: 0,
+                        backgroundColor: "#ffeeff",
+                        legendColor: '#ffeeff',
+                        fill: true,
+                        borderWidth: 1,
+                        data:data.through[3]
+                    }, {
+                        label: "capacity",
+                        borderColor: "#ae57",
+                        pointBackgroundColor: "#ae57",
+                        pointRadius: 0,
+                        backgroundColor: "#ae57",
+                        legendColor: '#ae57',
+                        fill: true,
+                        borderWidth: 1,
+                        data: data.capa[3]
+
+                    }, {
+                        borderColor: "#fff",
+                        pointBackgroundColor: "#fff",
+                        pointRadius: 0,
+                        backgroundColor: "#fff",
+                        legendColor: '#fff',
+                        fill: true,
+                        borderWidth: 1,
+                        data: [150]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false
+                    },
+                    tooltips: {
+                        bodySpacing: 4,
+                        mode: "nearest",
+                        intersect: 0,
+                        position: "nearest",
+                        xPadding: 10,
+                        yPadding: 10,
+                        caretPadding: 10
+                    },
+                    layout: {
+                        padding: { left: 15, right: 15, top: 15, bottom: 15 }
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                fontColor: "rgba(0,0,0,0.5)",
+                                fontStyle: "500",
+                                beginAtZero: false,
+
+                                padding: 20
+                            },
+                            gridLines: {
+                                drawTicks: false,
+                                display: false
+                            }
+                        }],
+                        xAxes: [{
+                            gridLines: {
+                                zeroLineColor: "transparent"
+                            },
+                            ticks: {
+                                padding: 20,
+                                fontColor: "rgba(0,0,0,0.5)",
+                                fontStyle: "500"
+                            }
+                        }]
+                    },
+                    legendCallback: function (chart) {
+                        var text = [];
+                        text.push('<ul class="' + chart.id + '-legend html-legend">');
+                        for (var i = 0; i < chart.data.datasets.length; i++) {
+                            text.push('<li><span style="background-color:' + chart.data.datasets[i].legendColor + '"></span>');
+                            if (chart.data.datasets[i].label) {
+                                text.push(chart.data.datasets[i].label);
+                            }
+                            text.push('</li>');
+                        }
+                        text.push('</ul>');
+                        return text.join('');
+                    }
+                }
+            });
+
+            var myLegendContainer = document.getElementById("myChartLegend");
+
+// generate HTML legend
+            myLegendContainer.innerHTML = myHtmlLegendsChart.generateLegend();
+
+// bind onClick event to all LI-tags of the legend
+            var legendItems = myLegendContainer.getElementsByTagName('li');
+            for (var i = 0; i < legendItems.length; i += 1) {
+                legendItems[i].addEventListener("click", legendClickCallback, false);
+            }
+
+
+        }
+
+    });
+});
+</script>
+<script>
+    var chart_9ad4f64b0b0c45638b323bef661ad98e = echarts.init(
+                document.getElementById('9ad4f64b0b0c45638b323bef661ad98e'), 'white', { renderer: 'canvas' });
+            var option_9ad4f64b0b0c45638b323bef661ad98e = {
+                "animation": true,
+                "animationThreshold": 2000,
+                "animationDuration": 1000,
+                "animationEasing": "cubicOut",
+                "animationDelay": 0,
+                "animationDurationUpdate": 300,
+                "animationEasingUpdate": "cubicOut",
+                "animationDelayUpdate": 0,
+                "color": [
+                    // "#c23531",
+                    // "#2f4554",
+                    // "#61a0a8",
+                    // "#d48265",
+                    // "#749f83",
+                    // "#ca8622",
+                    // "#bda29a",
+                    // "#6e7074",
+                    // "#546570",
+                    // "#c4ccd3",
+                    // "#f05b72",
+                    // "#ef5b9c",
+                    // "#f47920",
+                    // "#905a3d",
+                    "#fab27b",
+                    "#2a5caa",
+                    "#444693",
+                    "#726930",
+                    "#b2d235",
+                    "#6d8346",
+                    "#ac6767",
+                    "#1d953f",
+                    "#6950a1",
+                    "#918597"
+                ],
+                "series": [
+                    {
+                        "type": "bar",
+                        "name": "\u5065\u5eb7\u5ea6\u603b\u6307\u6807",
+                        "legendHoverLink": true,
+                        "data": [
+                            98.32,
+                            88.49,
+                            72.85,
+                            91.67
+                        ],
+                        "showBackground": false,
+                        "barMinHeight": 0,
+                        "barCategoryGap": "50%",
+                        "barGap": "0%",
+                        "large": false,
+                        "largeThreshold": 1,
+                        "seriesLayoutBy": "column",
+                        "datasetIndex": 0,
+                        "clip": true,
+                        "zlevel": 0,
+                        "z": 2,
+                        "label": {
+                            "show": true,
+                            "position": "right",
+                            "margin": 8
+                        },
+                        "rippleEffect": {
+                            "show": true,
+                            "brushType": "stroke",
+                            "scale": 2.5,
+                            "period": 4
+                        }
+                    },
+                    // {
+                    //     "type": "bar",
+                    //     "name": "association",
+                    //     "legendHoverLink": true,
+                    //     "data": [
+                    //         99.57,
+                    //         92.57,
+                    //         99.57,
+                    //         99.57
+                    //     ],
+                    //     "showBackground": false,
+                    //     "barMinHeight": 0,
+                    //     "barCategoryGap": "20%",
+                    //     "barGap": "30%",
+                    //     "large": false,
+                    //     "largeThreshold": 400,
+                    //     "seriesLayoutBy": "column",
+                    //     "datasetIndex": 0,
+                    //     "clip": true,
+                    //     "zlevel": 0,
+                    //     "z": 2,
+                    //     "label": {
+                    //         "show": true,
+                    //         "position": "right",
+                    //         "margin": 8
+                    //     },
+                    //     "rippleEffect": {
+                    //         "show": true,
+                    //         "brushType": "stroke",
+                    //         "scale": 2.5,
+                    //         "period": 4
+                    //     }
+                    // },
+                    // {
+                    //     "type": "bar",
+                    //     "name": "authentication",
+                    //     "legendHoverLink": true,
+                    //     "data": [
+                    //         48.54,
+                    //         98.54,
+                    //         98.54,
+                    //         98.54
+                    //     ],
+                    //     "showBackground": false,
+                    //     "barMinHeight": 0,
+                    //     "barCategoryGap": "20%",
+                    //     "barGap": "30%",
+                    //     "large": false,
+                    //     "largeThreshold": 400,
+                    //     "seriesLayoutBy": "column",
+                    //     "datasetIndex": 0,
+                    //     "clip": true,
+                    //     "zlevel": 0,
+                    //     "z": 2,
+                    //     "label": {
+                    //         "show": true,
+                    //         "position": "right",
+                    //         "margin": 8
+                    //     },
+                    //     "rippleEffect": {
+                    //         "show": true,
+                    //         "brushType": "stroke",
+                    //         "scale": 2.5,
+                    //         "period": 4
+                    //     }
+                    // }
+                ],
+                "legend": [
+                    {
+                        "data": [
+                            "\u5065\u5eb7\u5ea6\u603b\u6307\u6807",
+                            // "association",
+                            // "authentication"
+                        ],
+                        "selected": {
+                            "\u5065\u5eb7\u5ea6\u603b\u6307\u6807": true,
+                            // "association": true,
+                            // "authentication": true
+                        },
+                        "show": true,
+                        "padding": 5,
+                        "itemGap": 10,
+                        "itemWidth": 25,
+                        "itemHeight": 14
+                    }
+                ],
+                "tooltip": {
+                    "show": true,
+                    "trigger": "item",
+                    "triggerOn": "mousemove|click",
+                    "axisPointer": {
+                        "type": "line"
+                    },
+                    "showContent": true,
+                    "alwaysShowContent": false,
+                    "showDelay": 0,
+                    "hideDelay": 100,
+                    "textStyle": {
+                        "fontSize": 14
+                    },
+                    "borderWidth": 0,
+                    "padding": 5
+                },
+                "xAxis": [
+                    {
+                        "show": false,
+                        "scale": false,
+                        "nameLocation": "end",
+                        "nameGap": 15,
+                        "gridIndex": 0,
+                        "inverse": false,
+                        "offset": 0,
+                        "splitNumber": 10,
+                        "minInterval": 0,
+                        "splitLine": {
+                            "show": false,
+                            "lineStyle": {
+                                "show": true,
+                                "width": 1,
+                                "opacity": 1,
+                                "curveness": 0,
+                                "type": "solid"
+                            }
+                        }
+                    }
+                ],
+                "yAxis": [
+                    {
+                        "show": true,
+                        "scale": false,
+                        "nameLocation": "end",
+                        "nameGap": 15,
+                        "gridIndex": 0,
+                        "inverse": false,
+                        "offset": 0,
+                        "splitNumber": 5,
+                        "minInterval": 0,
+                        "splitLine": {
+                            "show": false,
+                            "lineStyle": {
+                                "show": true,
+                                "width": 1,
+                                "opacity": 1,
+                                "curveness": 0,
+                                "type": "solid"
+                            }
+                        },
+                        "data": [
+
+                            "\u6df1\u5733",
+                            "\u5357\u4eac",
+                            "\u82cf\u5dde",
+                            "\u4e0a\u6d77"
+                        ]
+                    }
+                ],
+                // "title": [
+                // 	{
+                // 		"text": "\u533a\u57df\u7f51\u7edc\u5065\u5eb7\u5ea6\u6392\u540d",
+                // 		"padding": 5,
+                // 		"itemGap": 10
+                // 	}
+                // ]
+            };
+            chart_9ad4f64b0b0c45638b323bef661ad98e.setOption(option_9ad4f64b0b0c45638b323bef661ad98e);
+</script>
+</html>

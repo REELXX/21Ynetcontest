@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<!-- 使用font awesome -->
+		<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../static/css/style.css">
+		<title>林文煊网页设计课设｜登录注册页面</title>
+	</head>
+
+	<body>
+
+		<div class="slidershow middle">
+
+			<div class="slides">
+
+				<input type="radio" name="r" id="r1" checked />
+				<input type="radio" name="r" id="r2" />
+				<input type="radio" name="r" id="r3" />
+
+				<div class="slide s1">
+					<img src="../static/bg/bg1.jpg" alt="photo" />
+				</div>
+
+				<div class="slide">
+					<img src="../static/bg/bg2.jpg" alt="photo" />
+				</div>
+
+				<div class="slide">
+					<img src="../static/bg/bg3.jpg" alt="photo" />
+				</div>
+
+			</div>
+
+			<div class="navigaion">
+				<label for="r1" class="bar"></label>
+				<!-- label标签为 input 元素定义标注  "for"属性可把label绑定到另外一个元素。请把 "for" 属性的值设置为相关元素的 id 属性的值。 -->
+				<label for="r2" class="bar"></label>
+				<label for="r3" class="bar"></label>
+			</div>
+
+		</div>
+
+		<div class="container" id="container">
+			<div class="form-container sign-up-container">
+				<form method="post" action=" ">
+					<h1>注 册</h1>
+					<div class="social-container">
+						<a href="#" class="social" onclick="socialFuntion()"><i class="fab fa-qq"></i></a>
+						<a href="#" class="social" onclick="socialFuntion()"><i class="fab fa-weixin"></i></a>
+						<a href="#" class="social" onclick="socialFuntion()"><i class="fab fa-weibo"></i></a>
+					</div>
+					<span>选择以上方式登录或使用您的账号</span>
+					<input type="text" placeholder="用户名" id="userIdSignUp" />
+					<input type="text" placeholder="账户" id="accountSignUp" />
+					<input type="password" placeholder="密码" id="passwordSignUp" />
+					<!-- <button onclick="signUpFuntion()">注册</button> -->
+					<input type="button" value="注册" id="buttonSignUp"  onclick="signUpFuntion()">
+				</form>
+			</div>
+
+			<div class="form-container sign-in-container">
+				<form method="POST" action=" ">
+					<h1>登 录</h1>
+					<div class="social-container">
+						<a href="#" class="social" onclick="socialFuntion()"><i class="fab fa-qq"></i></a>
+						<a href="#" class="social" onclick="socialFuntion()"><i class="fab fa-weixin"></i></a>
+						<a href="#" class="social" onclick="socialFuntion()"><i class="fab fa-weibo"></i></a>
+					</div>
+					<span>选择以上方式登录或使用您的账号</span>
+					<input type="text" placeholder="账户" name='accountSignIn' id="accountSignIn" />
+					<input type="password" placeholder="密码" name='passwordSignIn' id="passwordSignIn" />
+					<a href="#" onclick="forgetFuntion()">忘记密码？</a>
+					<!-- <button onclick="signInFuntion()">登录</button> -->
+					<input type="submit" value="登录" id="buttonSignIn">
+				</form>
+			</div>
+			<div class="overlay-container">
+				<div class="overlay">
+					<div class="overlay-panel overlay-left">
+						<h1>已有账号？</h1>
+						<p>请使用您的账号进行登录</p>
+						<button class="ghost" id="signIn">登录</button>
+					</div>
+					<div class="overlay-panel overlay-right">
+						<h1>没有账号？</h1>
+						<p>立即注册加入我们！</p>
+						<button class="ghost" id="signUp">注册</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../static/js/main.js"></script>
+
+	</body>
+
+</html>

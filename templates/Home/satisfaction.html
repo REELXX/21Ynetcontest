@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Campaigns</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="../static/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/img/favicon-16x16.png">
+  <link rel="manifest" href="../static/img/site.webmanifest">
+  <link rel="mask-icon" href="../static/img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Ultimate Multipurpose HTML Dashboard Kit">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ui8">
+  <meta name="twitter:title" content="Unity">
+  <meta name="twitter:description" content="Ultimate Multipurpose HTML Dashboard Kit">
+  <meta name="twitter:creator" content="@ui8">
+  <meta name="twitter:image" content="https://ui8-unity.herokuapp.com/img/twitter-card.jpg">
+  <meta property="og:title" content="Unity">
+  <meta property="og:type" content="Article">
+  <meta property="og:url" content="https://ui8-unity.herokuapp.com/index.html">
+  <meta property="og:image" content="https://ui8-unity.herokuapp.com/img/fb-og-image.jpg">
+  <meta property="og:description" content="Ultimate Multipurpose HTML Dashboard Kit">
+  <meta property="og:site_name" content="Unity">
+  <meta property="fb:admins" content="132951670226590">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:ital,wght@0,500;1,500&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" media="all" href="../static/css/super.css">
+  <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }</script>
+
+
+</head>
+
+<body>
+  <script>console.log(localStorage.getItem('darkMode'));
+    if (localStorage.getItem('darkMode') === "on") {
+      document.body.classList.add("dark");
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector('.js-switch-theme input').checked = true;
+      });
+    }
+  </script>
+  <div class="page">
+
+    <!--左边侧栏-->
+    <div class="sidebar">
+
+      <div class="sidebar__top">
+
+        <button class="sidebar__close">
+          <svg class="icon icon-close">
+            <use xlink:href="../static/img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <a class="sidebar__logo" href="#">
+          <img class="sidebar__pic sidebar__pic_black" src="../static/img/logo.png" alt="" />
+          <img class="sidebar__pic sidebar__pic_white" src="../static/img/logo-white.png" alt="" />
+        </a>
+
+        <button class="sidebar__burger"></button>
+
+      </div>
+
+      <div class="sidebar__wrapper">
+        <div class="sidebar__inner">
+          <a class="sidebar__logo" href="#"><img class="sidebar__pic" src="../static/img/logo-sm.png" alt="" /></a>
+          <div class="sidebar__list">
+            <div class="sidebar__group">
+              <div class="sidebar__caption caption-sm"><span>Overview</span></div>
+              <div class="sidebar__menu">
+                <a class="sidebar__item " href="overview.html">
+
+                  <div class="sidebar__icon">
+                    <svg class="icon icon-overview">
+                      <use xlink:href="../static/img/sprite.svg#icon-overview"></use>
+                    </svg>
+                  </div>
+
+                  <div class="sidebar__text">首页</div>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="sidebar__group">
+
+              <div class="sidebar__caption caption-sm">
+                <span>设备状况监控</span>
+              </div>
+
+              <div class="sidebar__menu">
+
+                <a class="sidebar__item  " href="monitor.html">
+                  <div class="sidebar__icon"><svg class="icon icon-overview">
+                      <use xlink:href="../static/img/sprite.svg#icon-overview"></use>
+                    </svg></div>
+                  <div class="sidebar__text">根站点信息</div>
+                </a>
+
+                <a class="sidebar__item" href="other.html">
+                  <div class="sidebar__icon"><svg class="icon icon-bag">
+                      <use xlink:href="../static/img/sprite.svg#icon-bag"></use>
+                    </svg></div>
+                  <div class="sidebar__text">站点健康评测体系</div>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="sidebar__group">
+              <div class="sidebar__caption caption-sm">工具</div>
+              <div class="sidebar__menu">
+
+                <a class="sidebar__item" href="userlist.html">
+                  <div class="sidebar__icon"><svg class="icon icon-message">
+                      <use xlink:href="../static/img/sprite.svg#icon-message"></use>
+                    </svg></div>
+                  <div class="sidebar__text">查询用户列表</div>
+                </a>
+
+                <a class="sidebar__item" href="errorDetect.html">
+                  <div class="sidebar__icon"><svg class="icon icon-notification">
+                      <use xlink:href="../static/img/sprite.svg#icon-notification"></use>
+                    </svg></div>
+                  <div class="sidebar__text">消息中心</div>
+                  <div class="sidebar__counter">3</div>
+                </a>
+
+                <a class="sidebar__item active" href="satisfaction.html">
+                  <div class="sidebar__icon"><svg class="icon icon-chat">
+                      <use xlink:href="../static/img/sprite.svg#icon-chat"></use>
+                    </svg></div>
+                  <div class="sidebar__text">扩展功能</div>
+                </a>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="sidebar__profile">
+            <div class="sidebar__details">
+
+              <a class="sidebar__link" href="#">
+                <div class="sidebar__icon"><svg class="icon icon-profile">
+                    <use xlink:href="../static/img/sprite.svg#icon-profile"></use>
+                  </svg>
+                </div>
+                <div class="sidebar__text">Profile</div>
+              </a>
+
+
+              <a class="sidebar__link" href="Sign_IN&UP.html">
+                <div class="sidebar__icon"><svg class="icon icon-logout">
+                    <use xlink:href="../static/img/sprite.svg#icon-logout"></use>
+                  </svg></div>
+                <div class="sidebar__text">Log out</div>
+              </a>
+
+            </div>
+
+            <a class="sidebar__user" href="#">
+
+              <div class="sidebar__ava"><img class="sidebar__pic" src="../static/img/ava.png" alt="" /></div>
+              <div class="sidebar__desc">
+                <div class="sidebar__man">管理员</div>
+                <div class="sidebar__status caption">administer</div>
+              </div>
+              <div class="sidebar__arrow"><svg class="icon icon-arrows">
+                  <use xlink:href="../static/img/sprite.svg#icon-arrows"></use>
+                </svg></div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="sidebar__bottom"><label class="switch switch_theme js-switch-theme"><input class="switch__input"
+            type="checkbox" /><span class="switch__in"><span class="switch__box"></span><span class="switch__icon"><svg
+                class="icon icon-moon">
+                <use xlink:href="../static/img/sprite.svg#icon-moon"></use>
+              </svg><svg class="icon icon-sun">
+                <use xlink:href="../static/img/sprite.svg#icon-sun"></use>
+              </svg></span></span></label></div>
+    </div>
+
+
+    <div class="page__wrapper">
+      <div class="page__center">
+
+        <!-- 顶栏 -->
+        <div class="page__row page__row_head page__row_border">
+
+          <div class="page__col">
+            <div class="page__hello h5">实验性功能</div>
+            <div class="page__welcome h2">扩展功能<span class="desktop-hide"></span></div>
+          </div>
+
+          <div class="page__col">
+
+            <!--搜索栏-->
+            <div class="header"><button class="header__burger"></button>
+
+              <div class="search">
+
+                <div class="search__field"><input class="search__input" type="text" placeholder="使用帮助" /><button
+                    class="search__toggle"><svg class="icon icon-search">
+                      <use xlink:href="../static/img/sprite.svg#icon-search"></use>
+                    </svg><svg class="icon icon-close">
+                      <use xlink:href="../static/img/sprite.svg#icon-close"></use>
+                    </svg></button>
+                </div>
+
+                <div class="search__result">
+                  <div class="search__info caption-sm"></div>
+                  <div class="search__list"><a class="search__item" href="#">
+                      <div class="search__preview bg-pink"><img class="search__pic" src="../static/img/figure-1.png" alt="" />
+                      </div>
+                      <div class="search__text">说明文档<svg class="icon icon-arrow-right">
+                          <use xlink:href="../static/img/sprite.svg#icon-arrow-right"></use>
+                        </svg></div>
+                    </a><a class="search__item" href="#">
+                      <div class="search__preview bg-yellow"><img class="search__pic" src="../static/img/figure-4.png" alt="" />
+                      </div>
+                      <div class="search__text">使用帮助<svg class="icon icon-arrow-right">
+                          <use xlink:href="../static/img/sprite.svg#icon-arrow-right"></use>
+                        </svg></div>
+                    </a><a class="search__item" href="#">
+                      <div class="search__preview bg-blue-light"><img class="search__pic" src="../static/img/figure-3.png"
+                          alt="" /></div>
+                      <div class="search__text">其他<svg class="icon icon-arrow-right">
+                          <use xlink:href="../static/img/sprite.svg#icon-arrow-right"></use>
+                        </svg></div>
+                    </a></div><button class="search__btn btn btn_purple btn_wide">Advance Search</button>
+                </div>
+
+              </div><button class="header__search"><svg class="icon icon-search">
+                  <use xlink:href="../static/img/sprite.svg#icon-search"></use>
+                </svg></button>
+
+
+              <div class="notifications"><button class="notifications__open"><svg class="icon icon-bell">
+                    <use xlink:href="../static/img/sprite.svg#icon-bell"></use>
+                  </svg><span class="notifications__counter">3</span></button>
+                <div class="notifications__wrap">
+                  <div class="notifications__info h6">运行消息</div>
+
+                  <div class="notifications__list">
+
+
+                    <a class="notifications__item" href="notifications.html">
+                      <div class="notifications__ava"><img class="notifications__pic" src="../static/img/ava-1.png" alt="" />
+                        <div class="notifications__status bg-blue"><img class="notifications__pic" src="../static/img/chat.svg"
+                            alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user caption">设备检测助手</div>
+                          <div class="notifications__time caption">8h</div>
+                        </div>
+                        <div class="notifications__text caption-sm">你的设备可能炸了<span
+                            class="notifications__project">系统消息</span></div>
+                      </div>
+
+
+                    </a><a class="notifications__item" href="notifications.html">
+                      <div class="notifications__ava"><img class="notifications__pic" src="../static/img/ava-1.png" alt="" />
+                        <div class="notifications__status bg-green"><img class="notifications__pic" src="../static/img/bag.svg"
+                            alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user caption">运行报告</div>
+                          <div class="notifications__time caption">12h</div>
+                        </div>
+                        <div class="notifications__text caption-sm">24内设备的运行报告出炉了！ <span
+                            class="notifications__project">系统信息</span></div>
+                      </div>
+
+
+                    </a><a class="notifications__item" href="notifications.html">
+                      <div class="notifications__ava"><img class="notifications__pic" src="../static/img/ava-1.png" alt="" />
+                        <div class="notifications__status bg-purple"><img class="notifications__pic"
+                            src="../static/img/message.svg" alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user caption">用户消息</div>
+                          <div class="notifications__time caption">14h</div>
+                        </div>
+                        <div class="notifications__text caption-sm">用户发来一条消息📪 </div>
+                      </div>
+
+                    </a>
+                  </div>
+                  <div class="notifications__btns"><a class="notifications__btn btn btn_black"
+                      href="/errorDetect.html">查看所有历史记录</a></div>
+                </div>
+              </div><a class="header__user" href="#"><img class="header__pic" src="../static/img/ava.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="page__content">
+
+          <div class="banner">
+
+            <div class="banner__container" style="background-color:#FA8072;">
+              <div class="banner__preview">
+                <img class="banner__pic" src="../static/img/banner-pic.png" alt="">
+              </div>
+              <div class="banner__wrap">
+                <div class="banner__title h3">扩展功能</div>
+                <div class="banner__text">以下功能正处于测试中</div>
+              </div>
+            </div>
+
+            <div class="activity">
+
+              <div class="activity__row">
+
+                <div class="activity__col">
+                  <div class="activity__container">
+                    <div class="activity__title h5">用户体验聚类分析</div>
+                    <div id="parallel" style="width:100%;height: 400px; margin-left: 50px; overflow:hidden;"></div>
+                  </div>
+                </div>
+
+                <div class="activity__col">
+
+                    <div class="activity__title h5">用户满意度占比</div>
+                    <div id="4b1609a1e9104d049e0acd026a8e1643" class="chart-container"
+                      style="width:100%; height:400px;overflow:hidden;"></div>
+                  
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup mfp-hide" id="popup-settings">
+    <form class="popup__form">
+      <div class="popup__title h6">Account Settings</div>
+      <div class="popup__tags"><a class="popup__tag active" href="#">Profile</a><a class="popup__tag"
+          href="#">Password</a><a class="popup__tag" href="#">Email</a><a class="popup__tag" href="#">Notification</a><a
+          class="popup__tag" href="#">Settings</a></div><select class="popup__select mobile-show">
+        <option>Profile</option>
+        <option>Password</option>
+        <option>Email</option>
+        <option>Notification</option>
+        <option>Settings</option>
+      </select>
+      <div class="popup__user">
+        <div class="popup__title h6 mobile-show">Your Profile</div>
+        <div class="popup__category caption-sm">Your Avatar</div>
+        <div class="popup__line">
+          <div class="popup__ava"><img class="popup__pic" src="../static/img/ava.png" alt=""></div>
+          <div class="popup__details">
+            <div class="popup__btns">
+              <div class="popup__loading"><input class="popup__file" type="file"><button
+                  class="popup__btn btn btn_purple">Upload New</button></div><button
+                class="popup__btn btn btn_gray">Delete Avatar</button>
+            </div>
+            <div class="popup__text">Avatar help your teammates recognize you in Unity.</div>
+          </div>
+        </div>
+      </div>
+      <div class="popup__fieldset">
+        <div class="popup__row">
+          <div class="popup__field field">
+            <div class="field__label">Your Full Name</div>
+            <div class="field__wrap"><input class="field__input" type="text"></div>
+          </div>
+          <div class="popup__field field">
+            <div class="field__label">Display Name</div>
+            <div class="field__wrap"><input class="field__input" type="text"></div>
+          </div>
+        </div>
+        <div class="popup__row">
+          <div class="popup__field field">
+            <div class="field__label">Role</div>
+            <div class="field__wrap"><input class="field__input" type="text"></div>
+          </div>
+          <div class="popup__field field">
+            <div class="field__label">Location</div>
+            <div class="field__wrap"><input class="field__input" type="text"></div>
+          </div>
+        </div>
+        <div class="popup__row">
+          <div class="popup__field field">
+            <div class="field__label">Role</div>
+            <div class="field__wrap"><input class="field__input" type="text"></div>
+          </div>
+          <div class="popup__field field">
+            <div class="field__label">Team</div>
+            <div class="field__wrap"><input class="field__input" type="text"></div>
+          </div>
+        </div>
+        <div class="popup__field field">
+          <div class="field__label">Bio</div>
+          <div class="field__wrap"><textarea class="field__textarea"></textarea></div>
+        </div>
+      </div><button class="popup__btn btn btn_black" type="submit">Update Profile</button>
+    </form>
+  </div>
+
+
+  <!-- scripts-->
+  <script src="../static/js/lib/jquery.min.js"></script>
+  <script src="../static/js/lib/owl.carousel.min.js"></script>
+  <script src="../static/js/lib/svg4everybody.min.js"></script>
+  <script src="../static/js/lib/apexcharts.min.js"></script>
+  <script src="../static/js/lib/jquery.magnific-popup.min.js"></script>
+  <script src="../static/js/super.js"></script>
+  <script src="../static/js/charts.js"></script>
+
+  <!--pyecharts-->
+  <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+
+</body>
+<script>
+  //用户满意度占比
+$(document).ready(function() {
+    $.ajax({
+        url: "/manyidu",
+        data: {
+        },
+        type: "POST",
+        dataType:"json",
+        success:function(data){
+            var chart_4b1609a1e9104d049e0acd026a8e1643 = echarts.init(
+                document.getElementById('4b1609a1e9104d049e0acd026a8e1643'), 'white', { renderer: 'canvas' });
+            var option_4b1609a1e9104d049e0acd026a8e1643 = {
+                "animation": true,
+                "animationThreshold": 2000,
+                "animationDuration": 1000,
+                "animationEasing": "cubicOut",
+                "animationDelay": 0,
+                "animationDurationUpdate": 300,
+                "animationEasingUpdate": "cubicOut",
+                "animationDelayUpdate": 0,
+                "color": [
+                    "#12abc8",
+                    "#2f4554",
+                    "#f47920",
+                    "#d48265",
+                    "#749f83",
+                    "#ca8622",
+                    "#bda29a",
+                    "#6e7074",
+                    "#c4ccd3",
+                    "#f05b72",
+                    "#ef5b9c",
+                    "#905a3d",
+                    "#fab27b",
+                    "#2a5caa",
+                    "#444693",
+                    "#726930",
+                    "#b2d235",
+                    "#6d8346",
+                    "#ac6767",
+                    "#1d953f",
+                    "#6950a1",
+                    "#918597"
+                ],
+                "series": [
+                    {
+                        "type": "pie",
+                        "name": "用户体验",
+                        "clockwise": true,
+                        "data": [
+                            {
+                                "name": "Bad",
+                                "value": data.STSF[0]
+                            },
+                            {
+                                "name": "Normal",
+                                "value": data.STSF[1]
+                            },
+                               {
+                                "name": "Excellent",
+                                "value": data.STSF[2]
+                            }
+                        ],
+                        "radius": [
+                            "60%",
+                            "90%"
+                        ],
+                        "center": [
+                            "50%",
+                            "50%"
+                        ],
+                        "label": {
+                            "show": true,
+                            "position": "inside",
+                            "margin": 8,
+                            "formatter": "{b}:{d}%"
+                        }
+                    }
+                ],
+                "legend": [
+                    {
+                        "data": [
+                            "\u6ee1\u610f",
+                            "\u4e0d\u6ee1\u610f"
+                        ],
+                        "selected": {}
+                    }
+                ],
+                "tooltip": {
+                    "show": true,
+                    "trigger": "item",
+                    "triggerOn": "mousemove|click",
+                    "axisPointer": {
+                        "type": "line"
+                    },
+                    "showContent": true,
+                    "alwaysShowContent": false,
+                    "showDelay": 0,
+                    "hideDelay": 100,
+                    "textStyle": {
+                        "fontSize": 14
+                    },
+                    "borderWidth": 0,
+                    "padding": 5
+                }
+            };
+            chart_4b1609a1e9104d049e0acd026a8e1643.setOption(option_4b1609a1e9104d049e0acd026a8e1643);
+
+        }
+
+    });
+});
+
+</script>
+<script>
+  //用户体验聚类分析
+$(document).ready(function() {
+       var dom = document.getElementById("parallel");
+            var myChart = echarts.init(dom);
+            var app = {};
+
+            var option;
+
+            // Schema:
+            var dataSZ = [
+                //[[],[],[]]
+                [-100.4947185207449,
+                    121.62192601248499,
+                    515.6090532979072,
+                    1349.8004535474734,
+                    45.228908336012786,
+                    1.5514202667428951,
+                    0.0],
+                [-94.07580085671191,
+                    142.81473043433763,
+                    722.1071536031066,
+                    2351.263028869468,
+                    27.075925463549126,
+                    2.48614752286997,
+                    0.0],
+                [-68.99544191214419,
+                    158.0760238577401,
+                    255.74460983800697,
+                    363.3697367679859,
+                    26.242029380064793,
+                    1.9636461512641146,
+                    0.0],
+                [-82.12367611466699,
+                    154.22809904235515,
+                    525.4048865498447,
+                    2915.3230703353493,
+                    32.17008164285793,
+                    0.9422037003323397,
+                    2.0],
+                [-97.49217960711765,
+                    176.72052347168673,
+                    710.709725085168,
+                    5969.740937555467,
+                    15.873836126389346,
+                    2.153630394662656,
+                    1.0],
+                [-66.44043306247137,
+                    132.40754007776252,
+                    709.4245107862803,
+                    5379.273965538842,
+                    29.26697576919771,
+                    0.26937065138361693,
+                    1.0],
+                [-103.21448778929904,
+                    139.81211513450754,
+                    477.7782200112159,
+                    735.4033336726604,
+                    20.140847215631158,
+                    4.637225855113392,
+                    0.0],
+                [-75.8849902465907,
+                    197.42469266680084,
+                    266.11806922040716,
+                    1212.2900094202876,
+                    4.3109647577765475,
+                    0.40510125510591966,
+                    0.0],
+                [-78.06419074096696,
+                    167.3565649361275,
+                    722.5324789204274,
+                    3506.043486034565,
+                    18.71084040621751,
+                    1.1101524932803497,
+                    2.0],
+                [-104.2154558917835,
+                    121.83835810659225,
+                    613.4770470554818,
+                    2075.006217562899,
+                    39.81152019493362,
+                    4.399809386157839,
+                    0.0],
+                [-86.40501836268852,
+                    184.07735837958512,
+                    341.9510947751181,
+                    3428.1532071677148,
+                    17.614132824141016,
+                    0.4514585614999195,
+                    2.0],
+                [-98.86577373408694,
+                    175.03830275881512,
+                    725.2675216594731,
+                    6645.708776424582,
+                    10.84143685834854,
+                    4.093671119972251,
+                    1.0],
+                [-88.33220395561953,
+                    156.40617097011474,
+                    453.36537884107327,
+                    808.9575808241706,
+                    31.17071188166851,
+                    0.4262907131175092,
+                    0.0],
+                [-67.13181296377745,
+                    219.00354603533756,
+                    343.3552535926516,
+                    4447.493352678414,
+                    36.712529755453,
+                    2.87750259711953,
+                    2.0],
+                [-81.086671386299,
+                    131.29337726155427,
+                    417.6303898752325,
+                    2312.6704277552494,
+                    34.356347559688714,
+                    2.354458947056817,
+                    0.0],
+                [-104.5690609020993,
+                    145.98839387071018,
+                    686.2687627800544,
+                    6836.131795523877,
+                    25.02955180475656,
+                    4.478247176058072,
+                    1.0],
+                [-94.64408939604493,
+                    175.92216354337683,
+                    520.9252900253196,
+                    1645.020883212942,
+                    1.437601897175017,
+                    3.1121631148519526,
+                    0.0],
+                [-61.690337393640746,
+                    215.62826240965168,
+                    476.8036665821402,
+                    4302.422366927178,
+                    17.113536299416367,
+                    4.486156964144845,
+                    2.0],
+                [-90.29855005386392,
+                    157.8530483913731,
+                    616.8461030964695,
+                    2694.9974699822214,
+                    41.178240190163045,
+                    0.7170787117689414,
+                    2.0],
+                [-112.63422281144005,
+                    140.5097965319408,
+                    653.8170152691891,
+                    5197.858460328392,
+                    46.81932497561812,
+                    0.3653086348174278,
+                    1.0],
+                [-71.93413610256034,
+                    204.2823089964457,
+                    584.1640524079717,
+                    5747.925702206094,
+                    20.26163524798888,
+                    3.8783896414451675,
+                    1.0],
+                [-96.63166279097786,
+                    172.29442840633982,
+                    586.5446353457777,
+                    2917.639248497442,
+                    2.1082123025221886,
+                    2.6308922009861835,
+                    2.0],
+                [-103.3269540650852,
+                    145.83291204673355,
+                    275.96673589872915,
+                    6118.458003322439,
+                    21.561406000090383,
+                    0.2857620942458938,
+                    1.0],
+                [-61.90005738083725,
+                    155.54303837535733,
+                    309.23725998897413,
+                    2405.0734344432644,
+                    4.715204222161229,
+                    2.2653296494676587,
+                    0.0],
+                [-99.26105608522516,
+                    155.14763215872125,
+                    276.92674566001875,
+                    3477.9682627113443,
+                    32.61306408684871,
+                    2.7608630196722705,
+                    2.0],
+                [-94.68568601632691,
+                    128.62361965900436,
+                    740.2793095807434,
+                    6546.760569438218,
+                    29.141570649857655,
+                    1.556728198607067,
+                    1.0],
+                [-79.22380849714402,
+                    152.4234948377449,
+                    624.6094107242216,
+                    4417.703513428384,
+                    4.08750040928616,
+                    2.961431941743929,
+                    2.0],
+                [-67.32500304058989,
+                    182.36670694613608,
+                    372.9597292182207,
+                    5412.78725353049,
+                    29.464848008948756,
+                    0.37677376282817365,
+                    1.0],
+                [-66.7225775476905,
+                    184.77971295022195,
+                    679.5525245662283,
+                    11.375920226513237,
+                    40.4284810233428,
+                    1.0835815636906265,
+                    0.0],
+                [-95.57659965560669,
+                    159.6449934873403,
+                    664.864089886496,
+                    4978.176073931018,
+                    38.91018959536691,
+                    4.173965089645352,
+                    1.0],
+                [-98.13277430525335,
+                    136.59163123656296,
+                    488.84958411006636,
+                    1376.2596281893063,
+                    6.406029587723294,
+                    3.5987230050636745,
+                    0.0],
+                [-88.45384602425844,
+                    133.65079002546827,
+                    257.5220911561208,
+                    1593.742425783075,
+                    10.156249292491177,
+                    3.5484917830419658,
+                    0.0],
+                [-86.98526966311644,
+                    147.76182220218035,
+                    621.3561220979673,
+                    6319.800628467818,
+                    27.29241028328888,
+                    0.6834261129742936,
+                    1.0],
+                [-67.35540732737462,
+                    211.50977842853308,
+                    556.573016552725,
+                    5591.578479361182,
+                    17.551700589903984,
+                    0.26198888122618114,
+                    1.0],
+                [-86.18318117972129,
+                    218.76402382707676,
+                    353.2149320423934,
+                    5702.05356494715,
+                    37.835012264304204,
+                    0.9181922337621867,
+                    1.0],
+                [-103.66644891217004,
+                    134.55836465635184,
+                    661.8069160752888,
+                    1476.4495754940351,
+                    47.28668932910354,
+                    0.7859455794228865,
+                    0.0],
+                [-89.56879829732321,
+                    173.21620188886055,
+                    308.24894275789075,
+                    4008.0555855394646,
+                    6.202566788077274,
+                    1.4863228707264076,
+                    2.0],
+                [-88.68792416453077,
+                    122.2866498993125,
+                    595.4530596795066,
+                    3452.6707137171934,
+                    33.2065692519764,
+                    3.4694446570687747,
+                    2.0],
+                [-75.85045999647316,
+                    159.88925582262846,
+                    680.981350289951,
+                    2686.6955445538374,
+                    2.611721231063635,
+                    4.200448000276504,
+                    2.0],
+                [-67.38199756265121,
+                    214.21580577537225,
+                    250.47409264394238,
+                    5682.962983277069,
+                    25.36015311790648,
+                    4.446751545181952,
+                    1.0],
+                [-67.43102521019786,
+                    177.42695514991212,
+                    412.1752675915013,
+                    3507.442154000884,
+                    34.07035075868997,
+                    2.752841834204833,
+                    2.0],
+                [-106.35783763852439,
+                    196.4571621063159,
+                    685.1485248156025,
+                    6683.913490670355,
+                    41.013722650471614,
+                    2.950463285566836,
+                    1.0],
+                [-74.12429526287082,
+                    197.22464695349663,
+                    390.0244925065158,
+                    5030.282092922869,
+                    16.34879640783274,
+                    1.0900671598191551,
+                    1.0],
+                [-112.0574196283878,
+                    167.8755344442716,
+                    463.6426761014567,
+                    5938.156620348009,
+                    37.226004782056556,
+                    4.1172528140433595,
+                    1.0],
+                [-96.4093338323413,
+                    122.18749877929825,
+                    676.4113789990793,
+                    5944.053484966488,
+                    36.99979771230988,
+                    4.64620481879168,
+                    1.0],
+                [-75.2370694390565,
+                    209.02885069691587,
+                    612.3311485370598,
+                    5894.469274865037,
+                    17.688936680757855,
+                    1.9452040853735642,
+                    1.0],
+                [-71.87508381396555,
+                    187.30762478077776,
+                    315.52092584283065,
+                    4945.707713043737,
+                    36.369468328130864,
+                    0.06945968258709856,
+                    1.0],
+                [-109.05929580560726,
+                    176.84110406085574,
+                    268.09497440543095,
+                    4439.513521330998,
+                    0.3150479514691773,
+                    0.27615506769139264,
+                    2.0],
+                [-66.3888157400568,
+                    184.53069070652055,
+                    494.0873436679,
+                    6507.404721148238,
+                    45.99441431092827,
+                    0.6677161194289877,
+                    1.0],
+                [-66.03319314530046,
+                    188.86841806739997,
+                    628.8264439439275,
+                    6189.743459762938,
+                    37.903932017663614,
+                    2.7280045799390806,
+                    1.0]
+
+            ];
+
+
+
+            var schema = [
+                { name: 'rssi', index: 0, text: 'rssi' },
+                { name: 'downlinkSpeed', index: 1, text: 'downlinkSpeed' },
+                { name: 'latency', index: 2, text: 'latency' },
+                { name: 'downSpeed', index: 3, text: 'downSpeed' },
+                { name: 'upSpeed', index: 4, text: ' upSpeed' },
+                { name: 'txDiscardRatio', index: 5, text: 'txDiscardRatio' },
+                { name: '体验', index: 6, text: '簇' }
+            ];
+
+            var lineStyle = {
+                normal: {
+                    width: 1.2,
+                    opacity: 0.7
+                }
+            };
+
+            option = {
+                backgroundColor: '#fff',
+                legend: {
+                    bottom: 30,
+                    data: ['深圳'],
+                    itemGap: 20,
+                    textStyle: {
+                        color: '#fff555',
+                        fontSize: 14
+                    }
+                },
+                tooltip: {
+                    padding: 10,
+                    backgroundColor: '#222',
+                    borderColor: '#777',
+                    borderWidth: 1
+                },
+
+                parallelAxis: [
+                    { dim: 0, name: schema[0].text, inverse: true, max: 31, nameLocation: 'start' },
+                    { dim: 1, name: schema[1].text },
+                    { dim: 2, name: schema[2].text },
+                    { dim: 3, name: schema[3].text },
+                    { dim: 4, name: schema[4].text },
+                    { dim: 5, name: schema[5].text },
+                    {
+                        dim: 6, name: schema[6].text,
+                        type: 'category', data: ['簇1', '簇2', '簇3']
+                    }
+                ],
+
+                visualMap: {
+                    show: false,
+                    min: 0,
+                    max: 7000,
+                    dimension: 3,
+                    inRange: {
+                        color: ['#d94e5d', '#eac736', '#50a3ba'].reverse(),
+                        colorAlpha: [0.5, 1]
+                    }
+                },
+                parallel: {
+                    left: '5%',
+                    right: '18%',
+                    bottom: 100,
+                    parallelAxisDefault: {
+                        type: 'value',
+                        name: 'rssi',
+                        nameLocation: 'end',
+                        nameGap: 20,
+                        nameTextStyle: {
+                            color: '#333',
+                            fontSize: 12
+                        },
+                        axisLine: {
+                            lineStyle: {
+                                color: '#aaa'
+                            }
+                        },
+                        axisTick: {
+                            lineStyle: {
+                                color: '#777'
+                            }
+                        },
+                        splitLine: {
+                            show: false
+                        },
+                        axisLabel: {
+                            color: '#999'
+                        }
+                    }
+                },
+                series: [
+                    {
+                        name: '单个用户',
+                        type: 'parallel',
+                        lineStyle: lineStyle,
+                        data: dataSZ
+                    },
+
+                ]
+            };
+
+            if (option && typeof option === 'object') {
+                myChart.setOption(option);
+            }
+});
+
+</script>
+</html>

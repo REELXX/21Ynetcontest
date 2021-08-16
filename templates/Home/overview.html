@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Overview</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/img/favicon-16x16.png">
+    <link rel="manifest" href="../static/img/site.webmanifest">
+    <link rel="mask-icon" href="../static/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Ultimate Multipurpose HTML Dashboard Kit">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ui8">
+    <meta name="twitter:title" content="Unity">
+    <meta name="twitter:description" content="Ultimate Multipurpose HTML Dashboard Kit">
+    <meta name="twitter:creator" content="@ui8">
+    <meta name="twitter:image" content="https://ui8-unity.herokuapp.com/img/twitter-card.jpg">
+    <meta property="og:title" content="Unity">
+    <meta property="og:type" content="Article">
+    <meta property="og:url" content="https://ui8-unity.herokuapp.com/index.html">
+    <meta property="og:image" content="https://ui8-unity.herokuapp.com/img/fb-og-image.jpg">
+    <meta property="og:description" content="Ultimate Multipurpose HTML Dashboard Kit">
+    <meta property="og:site_name" content="Unity">
+    <meta property="fb:admins" content="132951670226590">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:ital,wght@0,500;1,500&amp;display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" media="all" href="../static/css/super.css">
+    <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+        if (screen.width < 375) {
+            var newScale = screen.width / 375;
+            viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+        } else {
+            viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+        }
+    }</script>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+
+
+</head>
+<body>
+
+<div class="page">
+
+    <!--左边侧栏-->
+    <div class="sidebar">
+
+        <div class="sidebar__top">
+
+            <button class="sidebar__close">
+                <svg class="icon icon-close">
+                    <use xlink:href="../static/img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+
+            <a class="sidebar__logo" href="#">
+                <img class="sidebar__pic sidebar__pic_black" src="../static/img/logo.png" alt=""/>
+                <img class="sidebar__pic sidebar__pic_white" src="../static/img/logo-white.png" alt=""/>
+            </a>
+
+            <button class="sidebar__burger"></button>
+
+        </div>
+
+        <div class="sidebar__wrapper">
+            <div class="sidebar__inner">
+                <a class="sidebar__logo" href="#"><img class="sidebar__pic" src="../static/img/logo-sm.png" alt=""/></a>
+                <div class="sidebar__list">
+                    <div class="sidebar__group">
+                        <div class="sidebar__caption caption-sm"><span>Overview</span></div>
+                        <div class="sidebar__menu">
+                            <a class="sidebar__item active" href="overview.html">
+
+                                <div class="sidebar__icon">
+                                    <svg class="icon icon-overview">
+                                        <use xlink:href="../static/img/sprite.svg#icon-overview"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="sidebar__text">首页</div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="sidebar__group">
+
+                        <div class="sidebar__caption caption-sm">
+                            <span>设备状况监控</span>
+                        </div>
+
+                        <div class="sidebar__menu">
+
+                            <a class="sidebar__item " href="monitor.html">
+                                <div class="sidebar__icon">
+                                    <svg class="icon icon-overview">
+                                        <use xlink:href="../static/img/sprite.svg#icon-overview"></use>
+                                    </svg>
+                                </div>
+                                <div class="sidebar__text">根站点信息</div>
+                            </a>
+
+                            <a class="sidebar__item" href="other.html">
+                                <div class="sidebar__icon">
+                                    <svg class="icon icon-bag">
+                                        <use xlink:href="../static/img/sprite.svg#icon-bag"></use>
+                                    </svg>
+                                </div>
+                                <div class="sidebar__text">站点健康评测体系</div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="sidebar__group">
+                        <div class="sidebar__caption caption-sm">工具</div>
+                        <div class="sidebar__menu">
+
+                            <a class="sidebar__item" href="userlist.html">
+                                <div class="sidebar__icon">
+                                    <svg class="icon icon-message">
+                                        <use xlink:href="../static/img/sprite.svg#icon-message"></use>
+                                    </svg>
+                                </div>
+                                <div class="sidebar__text">查询用户列表</div>
+                            </a>
+
+                            <a class="sidebar__item" href="errorDetect.html">
+                                <div class="sidebar__icon">
+                                    <svg class="icon icon-notification">
+                                        <use xlink:href="../static/img/sprite.svg#icon-notification"></use>
+                                    </svg>
+                                </div>
+                                <div class="sidebar__text">消息中心</div>
+                                <div class="sidebar__counter">3</div>
+                            </a>
+
+                            <a class="sidebar__item" href="satisfaction.html">
+                                <div class="sidebar__icon">
+                                    <svg class="icon icon-chat">
+                                        <use xlink:href="../static/img/sprite.svg#icon-chat"></use>
+                                    </svg>
+                                </div>
+                                <div class="sidebar__text">扩展功能</div>
+                            </a>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="sidebar__profile">
+                    <div class="sidebar__details">
+
+                        <a class="sidebar__link" href="#">
+                            <div class="sidebar__icon">
+                                <svg class="icon icon-profile">
+                                    <use xlink:href="../static/img/sprite.svg#icon-profile"></use>
+                                </svg>
+                            </div>
+                            <div class="sidebar__text">Profile</div>
+                        </a>
+
+
+                        <a class="sidebar__link" href="Sign_IN&UP.html">
+                            <div class="sidebar__icon">
+                                <svg class="icon icon-logout">
+                                    <use xlink:href="../static/img/sprite.svg#icon-logout"></use>
+                                </svg>
+                            </div>
+                            <div class="sidebar__text">Log out</div>
+                        </a>
+
+                    </div>
+
+                    <a class="sidebar__user" href="#">
+
+                        <div class="sidebar__ava"><img class="sidebar__pic" src="../static/img/ava.png" alt=""/></div>
+                        <div class="sidebar__desc">
+                            <div class="sidebar__man">管理员</div>
+                            <div class="sidebar__status caption">administer</div>
+                        </div>
+                        <div class="sidebar__arrow">
+                            <svg class="icon icon-arrows">
+                                <use xlink:href="../static/img/sprite.svg#icon-arrows"></use>
+                            </svg>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="sidebar__bottom"><label class="switch switch_theme js-switch-theme"><input class="switch__input"
+                                                                                               type="checkbox"/><span
+                class="switch__in"><span class="switch__box"></span><span class="switch__icon"><svg
+                class="icon icon-moon">
+                <use xlink:href="../static/img/sprite.svg#icon-moon"></use>
+              </svg><svg class="icon icon-sun">
+                <use xlink:href="../static/img/sprite.svg#icon-sun"></use>
+              </svg></span></span></label></div>
+    </div>
+
+    <!--页面主体-->
+    <div class="page__wrapper">
+        <div class="page__center">
+
+            <!-- 顶栏 -->
+            <div class="page__row page__row_head page__row_border">
+
+                <div class="page__col">
+                    <div class="page__hello h5">欢迎使用</div>
+                    <div class="page__welcome h2">U n i t y .<span class="desktop-hide"></span></div>
+                </div>
+
+                <div class="page__col">
+
+                    <!--搜索栏-->
+                    <div class="header">
+                        <button class="header__burger"></button>
+
+                        <div class="search">
+
+                            <div class="search__field"><input class="search__input" type="text" placeholder="使用帮助"/>
+                                <button
+                                        class="search__toggle">
+                                    <svg class="icon icon-search">
+                                        <use xlink:href="../static/img/sprite.svg#icon-search"></use>
+                                    </svg>
+                                    <svg class="icon icon-close">
+                                        <use xlink:href="../static/img/sprite.svg#icon-close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="search__result">
+                                <div class="search__info caption-sm"></div>
+                                <div class="search__list"><a class="search__item" href="#">
+                                    <div class="search__preview bg-pink"><img class="search__pic"
+                                                                              src="../static/img/figure-1.png" alt=""/>
+                                    </div>
+                                    <div class="search__text">说明文档
+                                        <svg class="icon icon-arrow-right">
+                                            <use xlink:href="../static/img/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                    </div>
+                                </a><a class="search__item" href="#">
+                                    <div class="search__preview bg-yellow"><img class="search__pic"
+                                                                                src="../static/img/figure-4.png"
+                                                                                alt=""/>
+                                    </div>
+                                    <div class="search__text">使用帮助
+                                        <svg class="icon icon-arrow-right">
+                                            <use xlink:href="../static/img/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                    </div>
+                                </a><a class="search__item" href="#">
+                                    <div class="search__preview bg-blue-light"><img class="search__pic"
+                                                                                    src="../static/img/figure-3.png"
+                                                                                    alt=""/></div>
+                                    <div class="search__text">其他
+                                        <svg class="icon icon-arrow-right">
+                                            <use xlink:href="../static/img/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                    </div>
+                                </a></div>
+                                <button class="search__btn btn btn_purple btn_wide">Advance Search</button>
+                            </div>
+
+                        </div>
+                        <button class="header__search">
+                            <svg class="icon icon-search">
+                                <use xlink:href="../static/img/sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                        <!--语音模块-->
+                        <div class="speak">
+                            <button class="speak__open">
+                                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                     viewBox="4 2 17 17" aria-labelledby="microphoneIconTitle" stroke="#3a4a53"
+                                     stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" fill="none"
+                                     color="#3a4a53"><title id="microphoneIconTitle">Microphone (Voice input)</title>
+                                    <path d="M17 12C17 14.7614237 14.7614237 17 12 17 9.23857625 17 7 14.7614237 7 12M12 17L12 21"/>
+                                    <rect width="4" height="10" x="10" y="4" rx="2"/>
+                                </svg>
+                            </button>
+                            <div class="speak__wrap">
+                                <div class="speak__info h4">请开始说话...</div>
+                                <a class="speak__item" href="speak.html">
+                                    <div class="speak__user caption">当前设备情况</div>
+                                    <i style="width:20px;height:20px;border-radius:50%;background-color:red;display: block"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                        <a class="header__user" href="#"><img class="header__pic" src="../static/img/ava.png"
+                                                              alt=""/></a>
+
+
+                        <div class="notifications">
+                            <button class="notifications__open">
+                                <svg class="icon icon-bell">
+                                    <use xlink:href="../static/img/sprite.svg#icon-bell"></use>
+                                </svg>
+                                <span class="notifications__counter">3</span></button>
+                            <div class="notifications__wrap">
+                                <div class="notifications__info h6">运行消息</div>
+
+                                <div class="notifications__list">
+
+
+                                    <a class="notifications__item" href="notifications.html">
+                                        <div class="notifications__ava"><img class="notifications__pic"
+                                                                             src="../static/img/ava-1.png" alt=""/>
+                                            <div class="notifications__status bg-blue"><img class="notifications__pic"
+                                                                                            src="../static/img/chat.svg"
+                                                                                            alt=""/></div>
+                                        </div>
+                                        <div class="notifications__details">
+                                            <div class="notifications__line">
+                                                <div class="notifications__user caption">设备检测助手</div>
+                                                <div class="notifications__time caption">8h</div>
+                                            </div>
+                                            <div class="notifications__text caption-sm">你的设备可能炸了<span
+                                                    class="notifications__project">系统消息</span></div>
+                                        </div>
+
+
+                                    </a><a class="notifications__item" href="notifications.html">
+                                    <div class="notifications__ava"><img class="notifications__pic"
+                                                                         src="../static/img/ava-1.png"
+                                                                         alt=""/>
+                                        <div class="notifications__status bg-green"><img class="notifications__pic"
+                                                                                         src="../static/img/bag.svg"
+                                                                                         alt=""/></div>
+                                    </div>
+                                    <div class="notifications__details">
+                                        <div class="notifications__line">
+                                            <div class="notifications__user caption">运行报告</div>
+                                            <div class="notifications__time caption">12h</div>
+                                        </div>
+                                        <div class="notifications__text caption-sm">24内设备的运行报告出炉了！ <span
+                                                class="notifications__project">系统信息</span></div>
+                                    </div>
+
+
+                                </a><a class="notifications__item" href="notifications.html">
+                                    <div class="notifications__ava"><img class="notifications__pic"
+                                                                         src="../static/img/ava-1.png"
+                                                                         alt=""/>
+                                        <div class="notifications__status bg-purple"><img class="notifications__pic"
+                                                                                          src="../static/img/message.svg"
+                                                                                          alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="notifications__details">
+                                        <div class="notifications__line">
+                                            <div class="notifications__user caption">用户消息</div>
+                                            <div class="notifications__time caption">14h</div>
+                                        </div>
+                                        <div class="notifications__text caption-sm">用户发来一条消息📪</div>
+                                    </div>
+
+                                </a>
+                                </div>
+                                <div class="notifications__btns"><a class="notifications__btn btn btn_black"
+                                                                    href="/errorDetect.html">查看所有历史记录</a></div>
+                            </div>
+                        </div>
+                        <a class="header__user" href="#"><img class="header__pic" src="../static/img/ava.png"
+                                                              alt=""/></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__row page__row_border">
+
+                <!--主体中栏-->
+                <div class="page__col">
+
+                    <!--主体上半-轮播窗口-->
+                    <div class="slider">
+                        <div class="slider__container">
+                            <div class="slider__inner owl-carousel js-slider">
+                                <div class="slider__item">
+                                    <div class="slider__details">
+                                        <div class="slider__title h3">功能介绍</div>
+                                        <div class="slider__title h6">健康设备信息信息</div>
+                                        <div class="slider__text">健康监控、查看用户列表、用户接入趋势、满意度预测等
+
+                                        </div>
+                                        <a class="slider__btn btn btn_white " href="monitor.html"
+                                           data-effect="mfp-zoom-in">点击查看</a>
+                                    </div>
+                                    <div class="slider__preview"><img class="slider__pic"
+                                                                      src="../static/img/slider-pic.png"
+                                                                      alt=""></div>
+                                </div>
+
+                                <div class="slider__item">
+                                    <div class="slider__details">
+                                        <div class="slider__title h3">功能介绍</div>
+                                        <div class="slider__title h6">对设备进行远程配置</div>
+                                        <div class="slider__text">便捷快速的配置你的设备
+                                        </div>
+                                        <a class="slider__btn btn btn_white js-popup-open" href="#popup-settings"
+                                           data-effect="mfp-zoom-in">开始配置</a>
+                                    </div>
+                                    <div class="slider__preview"><img class="slider__pic"
+                                                                      src="../static/img/sidebar-pic.png"
+                                                                      alt=""></div>
+                                </div>
+
+                                <div class="slider__item">
+                                    <div class="slider__details">
+                                        <div class="slider__title h3">功能介绍</div>
+                                        <div class="slider__title h6">查看网络设备拓扑</div>
+                                        <div class="slider__text">查看网络拓扑结构
+                                        </div>
+                                        <a class="slider__btn btn btn_white js-popup-open" href="#popup-settings"
+                                           data-effect="mfp-zoom-in">点击查看</a>
+                                    </div>
+                                    <div class="slider__preview"><img class="slider__pic"
+                                                                      src="../static/img/slider-pic.png"
+                                                                      alt=""></div>
+                                </div>
+
+
+                            </div>
+                            <button class="slider__close">
+                                <svg class="icon icon-remove">
+                                    <use xlink:href="../static/img/sprite.svg#icon-remove"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--主体下半-->
+                    <!--
+                    <div class="page__widgets">
+                      <div class="widget widget_shadow">
+                        <div class="widget__title">Earnings by item</div>
+                        <div class="widget__list"><a class="widget__item" href="products.html">
+                            <div class="widget__preview bg-pink"><img class="widget__pic" src="img/figure-1.png" alt=""></div>
+                            <div class="widget__details">
+                              <div class="widget__category title">Bento 3D Kit<svg class="icon icon-arrow-right">
+                                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                                </svg></div>
+                              <div class="widget__info caption">Illustration</div>
+                            </div>
+                          </a><a class="widget__item" href="products.html">
+                            <div class="widget__preview bg-yellow"><img class="widget__pic" src="img/figure-2.png" alt=""></div>
+                            <div class="widget__details">
+                              <div class="widget__category title">Bento 3D Kit<svg class="icon icon-arrow-right">
+                                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                                </svg></div>
+                              <div class="widget__info caption">Illustration</div>
+                            </div>
+                          </a><a class="widget__item" href="products.html">
+                            <div class="widget__preview bg-blue-light"><img class="widget__pic" src="img/figure-3.png" alt="">
+                            </div>
+                            <div class="widget__details">
+                              <div class="widget__category title">Collab UI Kit<svg class="icon icon-arrow-right">
+                                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                                </svg></div>
+                              <div class="widget__info caption">Coded Template</div>
+                            </div>
+                          </a></div>
+                      </div>
+                      <div class="widget widget_chart widget_pink">
+                        <div class="widget__title">Earnings</div>
+                        <div class="widget__wrap">
+                          <div class="widget__chart widget__chart_earning">
+                            <div id="chart-earning"></div>
+                          </div>
+                          <div class="widget__btns"><button class="widget__btn btn btn_purple btn_wide">Analytics</button></div>
+                        </div>
+                      </div>
+                    </div>-->
+                </div>
+
+
+                <!--主体侧栏-->
+                <div class="page__col">
+
+                    <div class="page__group">
+                        <!--主体侧栏-上半-->
+                        <div class="widget widget_stat widget_pb60">
+
+                            <div class="widget__title">公告</div>
+                            <div class="widget widget_stat ">
+                                <div class="title color-purple">
+                                    功能开发中
+                                    请查看左侧栏功能介绍
+                                    请在设备页面查看详细信息
+                                </div>
+                            </div>
+                            <a class="widget__btn btn btn_white btn_wide" href="#">查看详情</a>
+                        </div>
+
+                        <!--主体侧栏-下半-->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--弹出窗口-->
+<div class="popup mfp-hide" id="popup-settings">
+    <form class="popup__form">
+        <div class="popup__title h6">设备配备</div>
+        <div class="popup__title h6">暂不支持</div>
+    </form>
+</div>
+<!-- scripts-->
+<script src="../static/js/lib/jquery.min.js"></script>
+<script src="../static/js/lib/owl.carousel.min.js"></script>
+<script src="../static/js/lib/svg4everybody.min.js"></script>
+
+<script src="../static/js/lib/apexcharts.min.js"></script>
+<script src="../static/js/lib/jquery.magnific-popup.min.js"></script>
+
+<script src="../static/js/super.js"></script>
+<script src="../static/js/charts.js"></script>
+
+<script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+<script src="../static/js/mycharts/pyecharts-circle.js"></script>
+<script src="../static/js/mycharts/yonghu.js"></script>
+<script src="../static/js/mycharts/jinggao.js"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        var i = 0;
+        //搜索 返回data加tenantId，id，startTime，endTime的类
+        $(".speak__open").click(function () {
+            i++;
+            $(".speak__item").empty();
+            $(".speak__info").text("请开始说话...");
+            if (i % 2 == 1) {
+                $.ajax({
+                    url: "/voice_detect",
+                    data: {},
+                    type: "POST",
+                    dataType: "json",
+                    success: function (data) {
+                         $(".speak__info").text(data.voice_detect);
+                        var deng = "<div class=\"speak__user caption\">当前设备情况</div>\n" +
+                            "<i style=\"width:20px;height:20px;border-radius:50%;background-color:" + data.color + ";display: block\"></i>";
+                        $(".speak__item").append(deng);
+                    }
+
+                });
+            }
+        });
+    });
+</script>
+<script>console.log(localStorage.getItem('darkMode'));
+if (localStorage.getItem('darkMode') === "on") {
+    document.body.classList.add("dark");
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector('.js-switch-theme input').checked = true;
+    });
+}
+</script>
+</html>

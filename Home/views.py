@@ -5,7 +5,7 @@ import numpy as np
 import pyaudio
 import wave
 import json
-
+from . import models
 import requests
 import re
 # 语音播报模块
@@ -23,18 +23,35 @@ from email.header import Header
 
 
 def admin(request):
-
     return render(request, 'Home/intro.html')
 
 
 def Sign(request):
     if request.method == 'POST':
-        name = request.POST.get('accountSignIn')
-        pwd = request.POST.get('passwordSignIn')
-        print(name, pwd)
-        # if request.POST.get('username') == CISCO123 and request.POST['password'] == CISCO123:
-        if name == 'huawei' and pwd == 'huawei':
+
+        # 获取页面填写的信息
+
+        nameSignIN = request.POST.get('accountSignIn')
+        passwordSignIN = request.POST.get('passwordSignIn')
+
+
+        # 登录
+        if nameSignIN == 'huawei' and passwordSignIN == 'huawei':
             return render(request, 'Home/overview.html')
+    return render(request, 'Home/Sign_IN&UP.html')
+
+
+def register(request):
+    # 获取页面填写的信息
+    userIdSignUp = request.POST.get('userIdSignUp')
+    passwordSignUp = request.POST.get('passwordSignUp')
+    confirmPasswordSignUp = request.POST.get('confirmPasswordSignUp')
+    emailSignUp = request.POST.get('emailSignUp')
+    # 注册
+    if passwordSignUp == confirmPasswordSignUp:
+        models.UserINFO.objects.create(username=userIdSignUp, password=passwordSignUp,
+                                       email=emailSignUp)
+        return render(request, 'Home/Sign_IN&UP.html')
     return render(request, 'Home/Sign_IN&UP.html')
 
 

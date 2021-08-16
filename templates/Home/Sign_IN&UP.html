@@ -47,7 +47,7 @@
 
 		<div class="container" id="container">
 			<div class="form-container sign-up-container">
-				<form action="#">
+				<form action="/register/" method="POST">
 					<h1>注 册</h1>
 					<div class="social-container">
 						<a href="#" class="social" onclick="socialFuntion()"><i class="fab fa-qq"></i></a>
@@ -55,12 +55,12 @@
 						<a href="#" class="social" onclick="socialFuntion()"><i class="fab fa-weibo"></i></a>
 					</div>
 					<span>选择以上方式登录或使用您的账号</span>
-					<input type="text" placeholder="账户" id="userIdSignUp" />
-					<input type="password" placeholder="密码" id="passwordSignUp" />
-					<input type="password" placeholder="确认密码" id="confirmPasswordSignUp" />
-					<input type="text" placeholder="邮箱" id="emailSignUp" />
+					<input type="text" placeholder="账户" id="userIdSignUp" name="userIdSignUp" />
+					<input type="password" placeholder="密码" id="passwordSignUp" name="passwordSignUp"/>
+					<input type="password" placeholder="确认密码" id="confirmPasswordSignUp" name="confirmPasswordSignUp"/>
+					<input type="text" placeholder="邮箱" id="emailSignUp" name="emailSignUp"/>
 					<!-- <button onclick="signUpFuntion()">注册</button> -->
-					<input type="button" value="注册" id="buttonSignUp"  onclick="signUpFuntion()">
+					<input type="submit" value="注册" id="buttonSignUp" >
 				</form>
 			</div>
 

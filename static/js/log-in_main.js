@@ -49,3 +49,9 @@ function forgetFuntion() {
 	alert("随便输入就行啦！");
 	
 }
+
+
+function success() {
+	alert("成功登入！");
+
+}
